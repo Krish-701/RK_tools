@@ -1,0 +1,1726 @@
+{
+  "last_node_id": 96,
+  "last_link_id": 111,
+  "nodes": [
+    {
+      "id": 11,
+      "type": "UNETLoader",
+      "pos": [
+        23,
+        69
+      ],
+      "size": [
+        315,
+        82
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            10
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        null,
+        "default"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "ModelSamplingFlux",
+      "pos": [
+        706,
+        55
+      ],
+      "size": [
+        315,
+        130
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            24
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelSamplingFlux"
+      },
+      "widgets_values": [
+        1.15,
+        0.5,
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": 13,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        404,
+        66
+      ],
+      "size": [
+        265.30914306640625,
+        82
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            11
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        null,
+        1
+      ]
+    },
+    {
+      "id": 15,
+      "type": "SamplerCustom",
+      "pos": [
+        1490,
+        50
+      ],
+      "size": [
+        355.20001220703125,
+        230
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "sampler",
+          "type": "SAMPLER",
+          "link": 20
+        },
+        {
+          "name": "sigmas",
+          "type": "SIGMAS",
+          "link": 21
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "LATENT",
+          "links": [
+            22
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "denoised_output",
+          "type": "LATENT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SamplerCustom"
+      },
+      "widgets_values": [
+        true,
+        51982703050983,
+        "randomize",
+        1
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 16,
+      "type": "DualCLIPLoader",
+      "pos": [
+        -2,
+        281
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            13,
+            49
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualCLIPLoader"
+      },
+      "widgets_values": [
+        null,
+        null,
+        "flux"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "CLIPTextEncode",
+      "pos": [
+        536,
+        266
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 49
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 102,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            15
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 18,
+      "type": "CLIPTextEncode",
+      "pos": [
+        593,
+        541
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            16
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 20,
+      "type": "Seed Everywhere",
+      "pos": [
+        606,
+        618
+      ],
+      "size": [
+        315,
+        82
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Seed Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": [
+        1045207693061727,
+        "randomize"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "Prompts Everywhere",
+      "pos": [
+        985,
+        476
+      ],
+      "size": [
+        226.79998779296875,
+        46
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "*",
+          "link": 15,
+          "shape": 7,
+          "color_on": "#FFA931"
+        },
+        {
+          "name": "CONDITIONING",
+          "type": "*",
+          "link": 16,
+          "shape": 7,
+          "color_on": "#FFA931"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Prompts Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 22,
+      "type": "VAELoader",
+      "pos": [
+        0,
+        495
+      ],
+      "size": [
+        272.6571350097656,
+        58
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            17
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "taesd"
+      ]
+    },
+    {
+      "id": 23,
+      "type": "Anything Everywhere",
+      "pos": [
+        311,
+        499
+      ],
+      "size": [
+        159.60000610351562,
+        26
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 17,
+          "shape": 7,
+          "color_on": "#FF6E6E"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 24,
+      "type": "EmptyLatentImage",
+      "pos": [
+        -60,
+        661
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            18
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1920,
+        1080,
+        1
+      ]
+    },
+    {
+      "id": 25,
+      "type": "Anything Everywhere",
+      "pos": [
+        366,
+        645
+      ],
+      "size": [
+        159.60000610351562,
+        26
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "LATENT",
+          "type": "*",
+          "link": 18,
+          "shape": 7,
+          "color_on": "#FF9CF9"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 29,
+      "type": "KSamplerSelect",
+      "pos": [
+        1190,
+        110
+      ],
+      "size": [
+        238.41334533691406,
+        58
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "links": [
+            20
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSamplerSelect"
+      },
+      "widgets_values": [
+        "euler"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 31,
+      "type": "VAEDecode",
+      "pos": [
+        1853,
+        52
+      ],
+      "size": [
+        141.91334533691406,
+        46
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 22
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            23
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 35,
+      "type": "Anything Everywhere",
+      "pos": [
+        1047,
+        58
+      ],
+      "size": [
+        159.60000610351562,
+        26
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 24,
+          "shape": 7,
+          "color_on": "#B39DDB"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 37,
+      "type": "rk_save_image",
+      "pos": [
+        2547,
+        40
+      ],
+      "size": [
+        657.8133544921875,
+        709.1990966796875
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 26
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "rk_save_image"
+      },
+      "widgets_values": [
+        "ComfyUI",
+        true
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 63,
+      "type": "ShowText|pysssss",
+      "pos": [
+        3981,
+        1195
+      ],
+      "size": [
+        614.7313232421875,
+        556.75341796875
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Ah, a question as old and multifaceted as the works that bear its name. Art, my dear interlocutor, is a symphony of human expression that transcends the boundaries of language and time. It is a manifestation of our collective creativity, an eternal conversation between the artist and the world.\n\nAt its core, art is the deliberate use of creative imagination to convey meaning or express emotion. It is not merely about aesthetics; it is about ideas, feelings, and stories. Art can be as ephemeral as a dance performance or as enduring as a marble sculpture. It can challenge our perceptions, provoke thought, evoke laughter, or stir the deepest emotions within us.\n\nArt history, much like humanity itself, is a vast tapestry woven with threads of diverse cultures, eras, and mediums. From the ancient cave paintings at Lascaux to the digital installations of today, each artistic movement - be it Renaissance, Baroque, Impressionism, Cubism, or Pop Art - offers a unique window into the societal values, technological advancements, and philosophical musings of its time.\n\nArt is not confined to visual mediums alone. It encompasses music, literature, theater, film, and more. Each form has its own language, its own grammar and syntax, yet they all share a common denominator: human expression. A Bach fugue, a Shakespearean sonnet, a Chaplin silent film - they are all art because they convey emotion, stir the soul, make us think, or simply bring us joy.\n\nMoreover, art is democratic. It belongs to everyone. It can be created by anyone with a vision and the means to express it. And it can be appreciated by anyone who chooses to engage with it. Whether you're an aficionado standing before a masterpiece in a museum or a child playing with clay, when you create or experience art, you are partaking in one of humanity's most fundamental activities.\n\nSo, what is art? It is the voice of our species echoing through time, telling stories, asking questions, provoking thought, and stirring souls. In essence, it is the very heartbeat of human civilization."
+      ]
+    },
+    {
+      "id": 74,
+      "type": "RK_seed",
+      "pos": [
+        -2510,
+        1170
+      ],
+      "size": [
+        400,
+        408
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "SEED",
+          "links": null,
+          "slot_index": 0
+        },
+        {
+          "name": "number",
+          "type": "NUMBER",
+          "links": null,
+          "slot_index": 1
+        },
+        {
+          "name": "float",
+          "type": "FLOAT",
+          "links": null,
+          "slot_index": 2
+        },
+        {
+          "name": "int",
+          "type": "INT",
+          "links": [],
+          "slot_index": 3
+        },
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            60
+          ],
+          "slot_index": 4
+        },
+        {
+          "name": "loop_value",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "loop_index",
+          "type": "INT",
+          "links": [],
+          "slot_index": 6
+        },
+        {
+          "name": "loop_value_string",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 7
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RK_seed"
+      },
+      "widgets_values": [
+        29,
+        "increment",
+        "disabled",
+        1,
+        100,
+        1,
+        100,
+        1,
+        ""
+      ]
+    },
+    {
+      "id": 75,
+      "type": "Griptape Display: Text",
+      "pos": [
+        -2030,
+        1250
+      ],
+      "size": [
+        210,
+        95.66421508789062
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INPUT",
+          "type": "STRING",
+          "link": 60,
+          "widget": {
+            "name": "INPUT"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            85
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Griptape Display: Text"
+      },
+      "widgets_values": [
+        "",
+        "28"
+      ]
+    },
+    {
+      "id": 92,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -460,
+        940
+      ],
+      "size": [
+        396.16778564453125,
+        547.8707885742188
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 91,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            93
+          ],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "**\"Photorealistic Canadian Woman: Elegant and Confident, Posing in a Stunning High-Waisted Red Bikini with Gold Accents for an Outdoor photoshoot at the Serene and Sun-Dappled Shores of a Tranquil Lake, Surrounded by Lush Greenery and Majestic Mountains in the Distance, Captured in Vibrant Colors and Detailed Textures\"**"
+      ]
+    },
+    {
+      "id": 91,
+      "type": "OllamaGenerateAdvance",
+      "pos": [
+        -1000,
+        940
+      ],
+      "size": [
+        445.51416015625,
+        674.4869384765625
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "context",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "context"
+          },
+          "shape": 7
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 90,
+          "widget": {
+            "name": "prompt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "response",
+          "type": "STRING",
+          "links": [
+            91
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "context",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OllamaGenerateAdvance"
+      },
+      "widgets_values": [
+        "",
+        false,
+        "http://194.68.245.198:22127",
+        "mistral-nemo:12b-instruct-2407-q5_K_S",
+        "i want this title for stable diffusion prompt add more detail in this title.  give more detail about charactor style and beauty. final prompt shoud be photorealistic formate ",
+        1040974331,
+        "randomize",
+        40,
+        0.9,
+        0.8,
+        -1,
+        1,
+        5,
+        false,
+        "text",
+        ""
+      ]
+    },
+    {
+      "id": 90,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -950,
+        620
+      ],
+      "size": [
+        407.90966796875,
+        248.2862548828125
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 87,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Russian Model: Striking Swimsuit Photoshoot by Frozen Lakes"
+      ]
+    },
+    {
+      "id": 89,
+      "type": "OllamaGenerateAdvance",
+      "pos": [
+        -1640,
+        710
+      ],
+      "size": [
+        582.9782104492188,
+        879.791015625
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "context",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "context"
+          },
+          "shape": 7
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 85,
+          "widget": {
+            "name": "prompt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "response",
+          "type": "STRING",
+          "links": [
+            87,
+            90
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "context",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OllamaGenerateAdvance"
+      },
+      "widgets_values": [
+        "",
+        false,
+        "http://194.68.245.198:22127",
+        "mistral-nemo:12b-instruct-2407-q5_K_S",
+        "input number, display only the corresponding entry from the list below. The output must include both the number and the complete text of the entry exactly as written, without any modifications, omissions, or additional text.\n\n\n1. Indian Woman: Outdoor Glamour and Hot Photoshoot  \n2. American Beauty: Sultry Outdoor Fashion Showcase  \n3. Brazilian Model: Exotic Glamour in Nature’s Embrace  \n4. Japanese Woman: Chic Outdoor Photoshoot Under Cherry Blossoms  \n5. French Elegance: Glamorous Outdoor Portraits in the Countryside  \n6. Italian Beauty: Fashion-Forward Outdoor Shoot in Tuscany  \n7. Russian Model: Striking Glamour Against Winter Landscapes  \n8. South African Woman: Vibrant Outdoor Fashion in the Wild  \n9. Mexican Beauty: Colorful Outdoor Photoshoot in Nature  \n10. Australian Model: Beachside Glamour and Adventure  \n11. Spanish Woman: Hot Summer Fashion in the Heart of Nature  \n12. Thai Beauty: Exotic Outdoor Photoshoot Amidst Tropical Scenery  \n13. Canadian Woman: Glamorous Outdoor Portraits in the Great Outdoors  \n14. British Model: Classy Outdoor Fashion in Historic Landscapes  \n15. Greek Woman: Stunning Glamour Amidst Ancient Ruins  \n16. Indian Woman: Hot Bikini Photoshoot by the Beach  \n17. American Beauty: Glamorous Swimsuit Shoot in the Summer Sun  \n18. Brazilian Model: Sultry Bikini Shoot on Tropical Shores  \n19. Japanese Woman: Chic Outdoor Swimwear Photoshoot in a Zen Garden  \n20. French Elegance: Stylish Swimsuit Shoot in Coastal France  \n21. Italian Beauty: Glamorous Bikini Photoshoot in Amalfi  \n22. Russian Model: Striking Swimsuit Photoshoot by Frozen Lakes  \n23. South African Woman: Vibrant Bikini Photoshoot in the Wild  \n24. Mexican Beauty: Hot Outdoor Swimwear Shoot in a Tropical Paradise  \n25. Australian Model: Glamorous Swimsuit Photoshoot on the Gold Coast  \n26. Spanish Woman: Chic Bikini Photoshoot Under Sunny Skies  \n27. Thai Beauty: Exotic Swimwear Shoot Amidst Lush Nature  \n28. Canadian Woman: Glamorous Outdoor Bikini Photoshoot by the Lake  \n29. British Model: Stylish Swimsuit Shoot in Iconic Landscapes  \n30. Greek Woman: Hot Bikini Photoshoot Against Ancient Ruins  \n31. Indian Woman: Bold Swimsuit Photoshoot in a Vibrant Market  \n32. American Beauty: Luxe Bikini Haul by the Ocean  \n33. Brazilian Model: Sizzling Swimwear Shoot on Carnival Streets  \n34. Japanese Woman: Minimalist Bikini Photoshoot by Serene Waters  \n35. French Elegance: Fashionable Swimsuit Haul on the Riviera  \n36. Italian Beauty: Captivating Bikini Photoshoot in Romantic Settings  \n37. Russian Model: Stylish Swimwear Photoshoot in a Winter Wonderland  \n38. South African Woman: Wild Bikini Shoot in Safari Settings  \n39. Mexican Beauty: Bright Swimwear Photoshoot in Colorful Markets  \n40. Australian Model: Energetic Bikini Photoshoot at the Beach  \n41. Spanish Woman: Glamorous Swimwear Haul in Historic Towns  \n42. Thai Beauty: Lush Bikini Photoshoot in a Tropical Paradise  \n43. Canadian Woman: Chic Swimsuit Shoot in Mountain Lakes  \n44. British Model: Elegant Swimwear Photoshoot in the Countryside  \n45. Greek Woman: Stunning Bikini Haul by the Aegean Sea  \n46. Indian Woman: Trendy Bikini Photoshoot by Cultural Landmarks  \n47. American Beauty: Daring Swimsuit Shoot in Urban Settings  \n48. Brazilian Model: Hot Bikini Haul on Carnival Streets  \n49. Japanese Woman: Graceful Swimwear Photoshoot in Cherry Blossom Fields  \n50. French Elegance: Sophisticated Bikini Photoshoot in Scenic Views  \n\nThese titles highlight various countries while focusing on glamorous and hot outdoor photoshoots, including swimwear and bikini themes.",
+        43267091,
+        "randomize",
+        40,
+        0.9,
+        0.8,
+        -1,
+        1,
+        5,
+        false,
+        "text",
+        ""
+      ]
+    },
+    {
+      "id": 94,
+      "type": "ShowText|pysssss",
+      "pos": [
+        560,
+        990
+      ],
+      "size": [
+        396.16778564453125,
+        547.8707885742188
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 96,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "**Title: \"Radiant Mediterranean Muse: A Photorealistic Portrait of Spanish Elegance\"**\n\n**Prompt:**\n\n\"Craft a photorealistic portrait of an exquisitely confident woman of Spanish descent, aged between 25 and 30 years. She possesses warm, sun-kissed olive skin that glows with health and vitality, expressive dark eyes that seem to hold the depth of the Mediterranean Sea, and lustrous wavy chestnut hair cascading down to her shoulders in loose, natural curls.\n\nHer attire is a stylish, form-fitting bikini that accentuates her figure with grace and poise. The top is a classic black triangle design, featuring clean lines and minimalist elegance, while the high-waisted bottom showcases intricate, hand-beaded gold-thread embroidery inspired by traditional Flamenco dance costumes. The golden threads catch the sunlight, shimmering like tiny flames against the deep black fabric.\n\nThe woman's pose is confident yet natural, as if she has been captured mid-action during a beach photoshoot. Her body language exudes elegance and grace, with her shoulders back, chin slightly lifted, and one hand resting casually on her hip. The other hand is raised, gently tucking a strand of hair behind her ear, revealing a delicate gold bangle adorned with filigree work.\n\nSurrounding her is a vibrant Mediterranean scene: the sun-kissed sand reflects the golden sunlight, creating a warm, inviting glow that seems to embrace the woman. The deep blue sea stretches out behind her, its waves gently lapping against the shore in a soothing rhythm. The sky above is a clear, cloudless canvas of cerulean blue, with only the distant outline of a white sailboat breaking up the horizon.\n\nEvery detail should be crisp and lifelike, capturing the essence of a sunny Mediterranean day. From the fine grains of sand to the individual threads of her bikini's embroidery, each element must be rendered with photographic precision. The woman's skin should have a natural sheen, her hair should catch the sunlight in warm chestnut highlights, and her eyes should sparkle with an inner light that brings the portrait to life.\n\nThe overall composition should evoke a sense of harmony and balance, with the woman at its center, surrounded by the beauty of her native Mediterranean landscape. The photograph should tell a story of confidence, grace, and the timeless allure of Spanish elegance.\""
+      ]
+    },
+    {
+      "id": 93,
+      "type": "OllamaGenerateAdvance",
+      "pos": [
+        -10,
+        950
+      ],
+      "size": [
+        472.3030090332031,
+        864.5525512695312
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "context",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "context"
+          },
+          "shape": 7
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 93,
+          "widget": {
+            "name": "prompt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "response",
+          "type": "STRING",
+          "links": [
+            96,
+            99
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "context",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OllamaGenerateAdvance"
+      },
+      "widgets_values": [
+        "",
+        false,
+        "http://194.68.245.198:22127",
+        "mistral-nemo:12b-instruct-2407-q5_K_S",
+        "You are a trailblazing luminary in the field of ultra-photorealistic 8K image generation, tasked with redefining the zenith of AI's visual capabilities. Your mission transcends mere prompt engineering; you are to craft comprehensive, hyper-detailed image descriptions that blend artistic storytelling with scientific precision. Each description must be a single, cohesive paragraph that seamlessly integrates all key aspects of photorealistic scene generation.\n\nGuidelines:\nStructure: The output must be written as one continuous paragraph. Avoid breaking into sections, headers, or bullet points.\n\nMaster Blueprint for Supreme Photorealism (Expanding into Uncharted Territory):\n\nThe output must be a paragraph adhering to this structure.\n\nDo not include any explanations, headers, or additional information.\n\nSCENE DETAILS: Weaving Worlds with Unprecedented Detail:\n\nEnvironment and Setting: Construct a universe within the prompt. Specify geographical coordinates, geological formations, intricate botanical ecosystems, meteorological conditions with dynamic weather patterns (wind direction and speed, humidity levels, temperature shifts), and celestial influences (sun position, moon phase, starlight). Architecturally, define styles, materials, aging processes, and structural nuances.\n\nSubjects and Objects: Sculpt subjects with hyperreal detail, capturing not just physical appearances but also inner life. Describe emotional states, psychological nuances, and physical reactions to the environment. For objects, delve into material composition at a molecular level, detailing surface textures, refractive and reflective properties, and the effects of time and use.\n\nHyperrealism Focus (Transcending Photographic Reality): Pursue a level of realism that surpasses traditional photography, aiming for an immersive experience where the viewer feels they could step into the scene. Capture every micro-detail and macro-element with scientific accuracy, blending them into a seamless whole that resonates with authenticity.\n\nCinematic Lighting and Volumetrics (Crafting Light as a Tangible Presence): Orchestrate lighting with the complexity of a cinematographer, employing global illumination, ray tracing, and volumetric effects to create a palpable atmosphere. Detail light sources not just by type and intensity but by their emotional and narrative impact, using techniques like chiaroscuro and Rembrandt lighting to sculpt the scene with shadows and highlights.\n\nEnvironmental Microdetails and Sensory Immersion (Engaging All Senses): Expand beyond visual details to evoke a multisensory experience. Include the feel of the air, the scent of the environment, and the subtle sounds that would accompany the scene. Detail micro-interactions such as the rustle of leaves, the shimmer of heat haze, and the gentle touch of a breeze.\n\nMaterial Properties and Textures (Exploring the Tangibility of Matter): Demand an almost scientific portrayal of materials, capturing their essence down to the atomic level. Describe textures with an emphasis on their tactile qualities, incorporating features like anisotropy, subsurface scattering, and the interaction of light with surfaces in ways that mimic reality with unparalleled accuracy.\n\nDynamic Micro-Actions and Psychological Depth (Animating Souls, Not Just Bodies): Breathe life into the scene with spontaneous, subtle human actions that reveal the inner lives of the subjects. Focus on micro-expressions, involuntary gestures, and the silent language of the body, infusing each character with psychological depth and emotional authenticity.\n\nTemporal and Meteorological Dynamics (Capturing the Flux of Time): Depict the scene within a precise temporal context, not just a time of day but a moment in time, capturing the transient effects of light, weather, and seasonal changes. Use detailed meteorological descriptions to add layers of realism, capturing the dynamism of nature.\n\nOptical Precision (Simulating the Complexity of Vision): Replicate the optical nuances of human vision or a high-end camera lens, including depth perception, focus falloff (if desired, with artistic intent), and the subtle aberrations that add character to real-world imagery.\n\nColor Grading and Tonal Mapping (Emotionally Sculpting with Color): Employ color grading techniques with the sophistication of a film colorist, using LUTs and precise color adjustments to evoke emotional responses and enhance the narrative. Aim for a palette that feels both natural and artistically resonant.\n\nCompositional Mastery (Leading the Eye and Heart): Design compositions that leverage advanced principles of visual storytelling, using leading lines, golden ratios, and spatial relationships to guide the viewer’s eye and evoke an emotional response. Create a visual journey that engages the viewer on multiple levels.\n\nRefined Negative Prompts (Eliminating All Traces of Artifice): Craft an exhaustive negative prompt that targets not just common AI artifacts but any element that could diminish the illusion of reality. Focus on eliminating anything that feels digital, artificial, or out of place, ensuring a seamless blend of generated imagery with the natural world.\n\nOutput Format:\n\nProduce a single-paragraph description that incorporates all the above elements into a unified scene, ensuring coherence and natural progression. Do not include headers, explanations, or extra information. Focus entirely on crafting a vivid, hyperrealistic image within the paragraph.\n",
+        55146623,
+        "randomize",
+        43,
+        0.98,
+        0.8,
+        -1,
+        1,
+        5,
+        false,
+        "text",
+        ""
+      ]
+    },
+    {
+      "id": 95,
+      "type": "OllamaGenerateAdvance",
+      "pos": [
+        980,
+        890
+      ],
+      "size": [
+        409.35430908203125,
+        604.2730102539062
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "context",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "context"
+          },
+          "shape": 7
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 99,
+          "widget": {
+            "name": "prompt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "response",
+          "type": "STRING",
+          "links": [
+            100
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "context",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OllamaGenerateAdvance"
+      },
+      "widgets_values": [
+        "",
+        false,
+        "http://194.68.245.198:22127",
+        "mistral-nemo:12b-instruct-2407-q5_K_S",
+        "You are a trailblazing luminary in the field of ultra-photorealistic 8K image generation, tasked with redefining the zenith of AI's visual capabilities. Your mission transcends mere prompt engineering; you are to craft comprehensive, hyper-detailed image descriptions that blend artistic storytelling with scientific precision. Each description must be a single, cohesive paragraph that seamlessly integrates all key aspects of photorealistic scene generation.\n\nGuidelines:\nStructure: The output must be written as one continuous paragraph. Avoid breaking into sections, headers, or bullet points.\n\nMaster Blueprint for Supreme Photorealism (Expanding into Uncharted Territory):\n\nThe output must be a paragraph adhering to this structure.\n\nDo not include any explanations, headers, or additional information.\n\nSCENE DETAILS: Weaving Worlds with Unprecedented Detail:\n\nEnvironment and Setting: Construct a universe within the prompt. Specify geographical coordinates, geological formations, intricate botanical ecosystems, meteorological conditions with dynamic weather patterns (wind direction and speed, humidity levels, temperature shifts), and celestial influences (sun position, moon phase, starlight). Architecturally, define styles, materials, aging processes, and structural nuances.\n\nSubjects and Objects: Sculpt subjects with hyperreal detail, capturing not just physical appearances but also inner life. Describe emotional states, psychological nuances, and physical reactions to the environment. For objects, delve into material composition at a molecular level, detailing surface textures, refractive and reflective properties, and the effects of time and use.\n\nHyperrealism Focus (Transcending Photographic Reality): Pursue a level of realism that surpasses traditional photography, aiming for an immersive experience where the viewer feels they could step into the scene. Capture every micro-detail and macro-element with scientific accuracy, blending them into a seamless whole that resonates with authenticity.\n\nCinematic Lighting and Volumetrics (Crafting Light as a Tangible Presence): Orchestrate lighting with the complexity of a cinematographer, employing global illumination, ray tracing, and volumetric effects to create a palpable atmosphere. Detail light sources not just by type and intensity but by their emotional and narrative impact, using techniques like chiaroscuro and Rembrandt lighting to sculpt the scene with shadows and highlights.\n\nEnvironmental Microdetails and Sensory Immersion (Engaging All Senses): Expand beyond visual details to evoke a multisensory experience. Include the feel of the air, the scent of the environment, and the subtle sounds that would accompany the scene. Detail micro-interactions such as the rustle of leaves, the shimmer of heat haze, and the gentle touch of a breeze.\n\nMaterial Properties and Textures (Exploring the Tangibility of Matter): Demand an almost scientific portrayal of materials, capturing their essence down to the atomic level. Describe textures with an emphasis on their tactile qualities, incorporating features like anisotropy, subsurface scattering, and the interaction of light with surfaces in ways that mimic reality with unparalleled accuracy.\n\nDynamic Micro-Actions and Psychological Depth (Animating Souls, Not Just Bodies): Breathe life into the scene with spontaneous, subtle human actions that reveal the inner lives of the subjects. Focus on micro-expressions, involuntary gestures, and the silent language of the body, infusing each character with psychological depth and emotional authenticity.\n\nTemporal and Meteorological Dynamics (Capturing the Flux of Time): Depict the scene within a precise temporal context, not just a time of day but a moment in time, capturing the transient effects of light, weather, and seasonal changes. Use detailed meteorological descriptions to add layers of realism, capturing the dynamism of nature.\n\nOptical Precision (Simulating the Complexity of Vision): Replicate the optical nuances of human vision or a high-end camera lens, including depth perception, focus falloff (if desired, with artistic intent), and the subtle aberrations that add character to real-world imagery.\n\nColor Grading and Tonal Mapping (Emotionally Sculpting with Color): Employ color grading techniques with the sophistication of a film colorist, using LUTs and precise color adjustments to evoke emotional responses and enhance the narrative. Aim for a palette that feels both natural and artistically resonant.\n\nCompositional Mastery (Leading the Eye and Heart): Design compositions that leverage advanced principles of visual storytelling, using leading lines, golden ratios, and spatial relationships to guide the viewer’s eye and evoke an emotional response. Create a visual journey that engages the viewer on multiple levels.\n\nRefined Negative Prompts (Eliminating All Traces of Artifice): Craft an exhaustive negative prompt that targets not just common AI artifacts but any element that could diminish the illusion of reality. Focus on eliminating anything that feels digital, artificial, or out of place, ensuring a seamless blend of generated imagery with the natural world.\n\nOutput Format:\n\nProduce a single-paragraph description that incorporates all the above elements into a unified scene, ensuring coherence and natural progression. Do not include headers, explanations, or extra information. Focus entirely on crafting a vivid, hyperrealistic image within the paragraph. don't miss any add all details \n",
+        16643074,
+        "randomize",
+        40,
+        0.9,
+        0.45,
+        -1,
+        1,
+        5,
+        false,
+        "text",
+        ""
+      ]
+    },
+    {
+      "id": 96,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1430,
+        1000
+      ],
+      "size": [
+        396.16778564453125,
+        547.8707885742188
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 100,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            102
+          ],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "In the heart of the Amazon rainforest (3.20°S, 58.15°W), under a canopy so dense that only dappled sunlight penetrates, a young indigenous boy stands barefoot on the damp earth, his skin glistening with sweat and river water. The air is thick with humidity at 97%, the temperature hovering around 32°C, while a gentle breeze from the east (8km/h) carries the symphony of unseen creatures and the faint scent of blooming heliconia. He wears only a simple loincloth, woven from the fibers of the chambira palm, its natural fibers rough to the touch yet softening with wear, each thread reflecting light at different angles due to its unique composition of cellulose, hemicellulose, and lignin. His eyes, dark as the rainforest's deepest recesses, hold a mix of curiosity and wariness, tracking the movement of a vibrant blue morpho butterfly that flutters nearby. The butterfly's wings, iridescent under the filtered light, display intricate scales that diffract light at various angles, creating an ever-changing play of colors from blues to greens to purples. Behind him, the ancient trees stretch towards the distant sunlight, their trunks adorned with epiphytes and lichens, while around him, the forest floor teems with life - ferns unfurling, ants marching in endless columns, and a family of capuchin monkeys chattering in the understory. The scene is bathed in an emerald glow, the color of the rainforest's vast canopy, punctuated by the warm golden hues of sunlight filtering through the leaves above, each beam casting a soft spotlight on the boy and his world."
+      ]
+    },
+    {
+      "id": 32,
+      "type": "rk_save_image",
+      "pos": [
+        1915,
+        65
+      ],
+      "size": [
+        657.8133544921875,
+        709.1990966796875
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 23
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "rk_save_image"
+      },
+      "widgets_values": [
+        "ComfyUI",
+        true
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 36,
+      "type": "VAEDecode",
+      "pos": [
+        1706,
+        412
+      ],
+      "size": [
+        141.91334533691406,
+        46
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 25
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            26
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": [],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 30,
+      "type": "BasicScheduler",
+      "pos": [
+        1140,
+        210
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SIGMAS",
+          "type": "SIGMAS",
+          "links": [
+            21
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BasicScheduler"
+      },
+      "widgets_values": [
+        "beta",
+        8,
+        1
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 34,
+      "type": "KSampler",
+      "pos": [
+        1310,
+        416
+      ],
+      "size": [
+        324.0091247558594,
+        262
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            25
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        468270157165127,
+        "randomize",
+        8,
+        1,
+        "euler",
+        "beta",
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    }
+  ],
+  "links": [
+    [
+      10,
+      11,
+      0,
+      13,
+      0,
+      "MODEL"
+    ],
+    [
+      11,
+      13,
+      0,
+      12,
+      0,
+      "MODEL"
+    ],
+    [
+      13,
+      16,
+      0,
+      18,
+      0,
+      "CLIP"
+    ],
+    [
+      15,
+      17,
+      0,
+      21,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      16,
+      18,
+      0,
+      21,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      17,
+      22,
+      0,
+      23,
+      0,
+      "VAE"
+    ],
+    [
+      18,
+      24,
+      0,
+      25,
+      0,
+      "LATENT"
+    ],
+    [
+      20,
+      29,
+      0,
+      15,
+      3,
+      "SAMPLER"
+    ],
+    [
+      21,
+      30,
+      0,
+      15,
+      4,
+      "SIGMAS"
+    ],
+    [
+      22,
+      15,
+      0,
+      31,
+      0,
+      "LATENT"
+    ],
+    [
+      23,
+      31,
+      0,
+      32,
+      0,
+      "IMAGE"
+    ],
+    [
+      24,
+      12,
+      0,
+      35,
+      0,
+      "MODEL"
+    ],
+    [
+      25,
+      34,
+      0,
+      36,
+      0,
+      "LATENT"
+    ],
+    [
+      26,
+      36,
+      0,
+      37,
+      0,
+      "IMAGE"
+    ],
+    [
+      49,
+      16,
+      0,
+      17,
+      0,
+      "CLIP"
+    ],
+    [
+      60,
+      74,
+      4,
+      75,
+      0,
+      "STRING"
+    ],
+    [
+      85,
+      75,
+      0,
+      89,
+      1,
+      "STRING"
+    ],
+    [
+      87,
+      89,
+      0,
+      90,
+      0,
+      "STRING"
+    ],
+    [
+      90,
+      89,
+      0,
+      91,
+      1,
+      "STRING"
+    ],
+    [
+      91,
+      91,
+      0,
+      92,
+      0,
+      "STRING"
+    ],
+    [
+      93,
+      92,
+      0,
+      93,
+      1,
+      "STRING"
+    ],
+    [
+      96,
+      93,
+      0,
+      94,
+      0,
+      "STRING"
+    ],
+    [
+      99,
+      93,
+      0,
+      95,
+      1,
+      "STRING"
+    ],
+    [
+      100,
+      95,
+      0,
+      96,
+      0,
+      "STRING"
+    ],
+    [
+      102,
+      96,
+      0,
+      17,
+      1,
+      "STRING"
+    ],
+    [
+      103,
+      12,
+      0,
+      15,
+      0,
+      "MODEL"
+    ],
+    [
+      104,
+      17,
+      0,
+      15,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      105,
+      18,
+      0,
+      15,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      106,
+      22,
+      0,
+      31,
+      1,
+      "VAE"
+    ],
+    [
+      107,
+      22,
+      0,
+      36,
+      1,
+      "VAE"
+    ],
+    [
+      108,
+      12,
+      0,
+      30,
+      0,
+      "MODEL"
+    ],
+    [
+      109,
+      12,
+      0,
+      34,
+      0,
+      "MODEL"
+    ],
+    [
+      110,
+      17,
+      0,
+      34,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      111,
+      18,
+      0,
+      34,
+      2,
+      "CONDITIONING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        -481.9700249504042,
+        59.11142632709601
+      ]
+    }
+  },
+  "version": 0.4
+}
