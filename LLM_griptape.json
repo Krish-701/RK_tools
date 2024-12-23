@@ -1,0 +1,4625 @@
+{
+  "last_node_id": 115,
+  "last_link_id": 149,
+  "nodes": [
+    {
+      "id": 7,
+      "type": "Griptape Display: Data as Text",
+      "pos": [
+        2065.194580078125,
+        -972.6473388671875
+      ],
+      "size": [
+        252,
+        76
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "INPUT",
+          "type": "*",
+          "link": 6,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            4
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "6"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 4,
+      "type": "Griptape Create: Agent",
+      "pos": [
+        2443.963623046875,
+        -989.3043823242188
+      ],
+      "size": [
+        395.7944641113281,
+        403.40557861328125
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "agent",
+          "type": "AGENT",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "config",
+          "type": "CONFIG",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "tools",
+          "type": "TOOL_LIST",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "rulesets",
+          "type": "RULESET",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "input_string",
+          "type": "STRING",
+          "link": 4,
+          "widget": {
+            "name": "input_string"
+          },
+          "shape": 7
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "link": 8,
+          "widget": {
+            "name": "STRING"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            5
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "AGENT",
+          "type": "AGENT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Griptape Create: Agent",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 12,
+      "type": "Text Multiline",
+      "pos": [
+        1981.8505859375,
+        -842.8217163085938
+      ],
+      "size": [
+        434.8326416015625,
+        258.8835754394531
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            8
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Multiline",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "input number, display only the corresponding entry from the list below. The output must include both the number and the complete text of the entry exactly as written, without any modifications, omissions, or additional text.\n\n1. Create an image of a 4-year-old Indian boy as a divine forest protector, inspired by Lord Ayyappa. He wears a green dhoti with golden trim, adorned with simple yet radiant gold jewelry. In one hand, he holds a bow, and a tiger stands protectively beside him. The forest setting is dense and vibrant, with golden sunlight filtering through the trees, casting a divine glow. The boy’s expression is calm and powerful, embodying innocence and courage, while birds and deer gather around him, symbolizing harmony with nature.\n\n2. Depict a 4-year-old Indian boy as a celestial warrior, dressed in a resplendent golden dhoti and an elaborately designed crown. He wields a glowing bow and arrow, with the aura of divine energy radiating from him. His surroundings are mystical: a fiery orange sunset over a rugged mountain, and behind him, a line of tigers follows his command. His face reflects both a childlike wonder and the strength of a divine protector.\n\n3. Illustrate a 4-year-old Indian boy inspired by Lord Ayyappa, barefoot and dressed as a sacred pilgrim in black dhoti and tulasi (sacred bead) garland. He carries a sling bag over his shoulder, walking confidently through a misty forest path. The boy is surrounded by elephants, tigers, and monkeys, symbolizing divine harmony. The mood is serene and spiritual, with a warm golden glow lighting his path.\n\n4. Portray a 4-year-old Indian boy as a divine child riding on the back of a majestic tiger. He is dressed in golden robes and adorned with a sparkling crown and jewelry. The tiger strides through a vibrant forest, its eyes gleaming with power. The boy's expression is playful yet commanding, as sunlight beams down, creating a halo-like glow around him. Birds and butterflies flutter around, adding to the divine atmosphere.\n\n5. Depict a 4-year-old Indian boy sitting cross-legged on a floating lotus in the middle of a celestial lake, symbolizing purity and divinity. He wears a traditional golden dhoti, an ornate crown with a peacock feather, and shimmering gold ornaments. His hands hold a bow and arrow, glowing with divine light. Surround him with stars and a celestial aura, while the calm lake reflects his radiant image, symbolizing his role as a cosmic protector.\n\n6. Illustrate a 4-year-old Indian boy inspired by Lord Ayyappa, sitting peacefully on the edge of a sacred river. He wears a green and gold dhoti with a floral garland around his neck. A golden crown with divine symbols rests on his head, and his hand dips gently into the crystal-clear water, creating ripples. A tiger lounges beside him, while lotuses float on the river. The atmosphere is serene, with soft light reflecting off the water, symbolizing purity and spirituality.\n\n7. Create an image of a 4-year-old Indian boy meditating under a massive banyan tree, inspired by Lord Ayyappa. He is dressed in golden attire, with an intricate crown and sacred markings on his forehead. The forest is alive with divine light, and animals such as tigers, deer, and peacocks gather around him in reverence. His closed eyes and serene face radiate peace, while a soft golden glow envelops his form, emphasizing his enlightened state.\n\n8. Depict a 4-year-old Indian boy dressed as a divine prince, seated on a grand, ornate golden chariot pulled by tigers. He wears a green dhoti, a radiant crown, and heavy gold jewelry. The scene is set in a forest at sunrise, with vibrant colors painting the sky. A crowd of forest animals follows the chariot, while birds fly overhead. The boy waves gently with a smile, radiating divine authority and compassion.\n\n9. Illustrate a 4-year-old Indian boy as the divine guardian of a sacred mountain, inspired by Lord Ayyappa. He stands atop a mountain peak, dressed in golden attire with a radiant crown. A tiger sits beside him, gazing protectively at his side. The boy holds a glowing bow, and a quiver of arrows is slung over his shoulder. The background features a breathtaking sunrise with rolling clouds, giving the scene an ethereal, celestial feel.\n\n10. Create an image of a 4-year-old Indian boy sitting at the steps of a golden temple, inspired by Lord Ayyappa. He wears a traditional green-and-gold dhoti, with an ornate crown adorned with gemstones. The temple’s intricate carvings and glowing lamps create a divine atmosphere. Tigers lie peacefully at his feet, and the boy holds a bow in his lap. The setting is serene and spiritual, with devotees and animals in the background, emphasizing his divine aura."
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 6,
+      "type": "RK_seed",
+      "pos": [
+        1549.8018798828125,
+        -975.2327880859375
+      ],
+      "size": [
+        400,
+        408
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "SEED",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "number",
+          "type": "NUMBER",
+          "links": null
+        },
+        {
+          "name": "float",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "int",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            6
+          ],
+          "slot_index": 4
+        },
+        {
+          "name": "loop_value",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "loop_index",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "loop_value_string",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RK_seed",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        67,
+        "increment",
+        "disabled",
+        0.1,
+        1,
+        0.1,
+        10,
+        2,
+        "0.1, 0.8, 1.6"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "Griptape Display: Data as Text",
+      "pos": [
+        2857.09765625,
+        -955.9796142578125
+      ],
+      "size": [
+        348.2129821777344,
+        327.3648681640625
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "INPUT",
+          "type": "*",
+          "link": 5,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            47
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "6. Illustrate a 4-year-old Indian boy inspired by Lord Ayyappa, sitting peacefully on the edge of a sacred river. He wears a green and gold dhoti with a floral garland around his neck. A golden crown with divine symbols rests on his head, and his hand dips gently into the crystal-clear water, creating ripples. A tiger lounges beside him, while lotuses float on the river. The atmosphere is serene, with soft light reflecting off the water, symbolizing purity and spirituality."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 33,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        1474.9832763671875,
+        -1115.0113525390625
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 48,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            51
+          ],
+          "slot_index": 0,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Right",
+          "Left"
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "type": "Griptape Display: Data as Text",
+      "pos": [
+        2477.865966796875,
+        -410.4216003417969
+      ],
+      "size": [
+        428.12005615234375,
+        437.80718994140625
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INPUT",
+          "type": "*",
+          "link": 27,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            57
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "A cyberpunk assassin, shrouded in deep shadows that dance with neon lights, stands silently, her presence as elusive as the misty air. Her eyes gleam with an otherworldly intensity, and her hair flows like liquid silver in the breeze. She's clad in a sleek, black t-shirt that contours perfectly to her figure, its lines sharp and precise, reflecting the angularity of the cityscape around her. The shirt is adorned with a vector graphic that seamlessly integrates futuristic elements—perhaps a stylized logo or a geometric pattern that hints at the technological marvels of the cyberpunk world. Her arms are bare, accentuating the strength and fluidity of her movements, as she prepares to launch into action. A pair of sleek, metallic bracelets clinks softly against her skin, each one a testament to her cybernetic enhancements. In her hands, she holds a futuristic weapon—a compact, energy-efficient device that glows with an iridescent light, its power source hidden within the coolness of her grasp. Her feet are shod in black, high-heeled boots that provide both style and support, propelling her forward with each step. The air is filled with the hum of distant engines and the chatter of the city's inhabitants, yet she remains a silent sentinel, her presence felt but not heard. Her lips are pursed in concentration as she contemplates her next move, and her mind races with the calculations needed to maintain her perfect balance between human intuition and cybernetic precision. As she moves gracefully from shadow to shadow, the contours of her body seem to merge with the urban landscape, making her a living, breathing part of the city's vibrant tapestry. The black background is a canvas that accentuates the vibrancy of her outfit and the intricate details of her accessories, allowing each element to stand out in its own right. Her overall demeanor exudes confidence and calmness, as if she knows exactly where she's going and how to get there with unwavering certainty. In this moment, time seems to slow down, and every detail—her posture, the way her hair flows, the gleam of her eyes—is perfectly synchronized, creating a harmonious blend of natural beauty and technological marvel."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 37,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        1479.0516357421875,
+        114.05171203613281
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 44,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 61,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            63
+          ],
+          "slot_index": 0,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Right",
+          "Left"
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "type": "Griptape Display: Data as Text",
+      "pos": [
+        3540.82421875,
+        -908.6830444335938
+      ],
+      "size": [
+        417.5464782714844,
+        188.6981964111328
+      ],
+      "flags": {},
+      "order": 51,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INPUT",
+          "type": "*",
+          "link": 137,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            69
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        " In the heart of Neo-Tokyo (35°40'59.1\"N, 139°45'26.7\"E), at the intersection of the towering cybernetic skyscrapers and the sprawling organic slums, a solitary figure stands, her silhouette etched against the backdrop of an electric sunset. The metropolis is bathed in the warm hues of dusk, with the orange glow casting long shadows that dance with the neon lights adorning the cityscape. A subtle mist fills the air, carrying the scent of ozone and the faintest trace of rain-soaked concrete.\n\nThe figure, a cyberpunk assassin, is cloaked in the cool shadows, her sleek black t-shirt a seamless integration of futuristic elements - a stylized logo subtly embedded within its contours, mirroring the angularity of the cityscape around her. Her arms bare, they gleam with an otherworldly intensity, each muscle defined by the refractive light. A pair of sleek, metallic bracelets adorn her wrists, their cool touch a testament to her cybernetic enhancements. In her hands, she cradles a compact, energy-efficient weapon that glows with an iridescent light, its power source hidden within the device.\n\nHer eyes, sharp and focused, scan the urban jungle, the subtle micro-expressions betraying a quiet determination. The breeze gently rustles her hair, and the air carries the sound of distant sirens, adding to the urban symphony playing in the background. A single leaf falls from a nearby tree, its path dictated by the wind, creating a gentle ripple effect on the ground beneath her feet.\n\nThe light source, a lone neon sign, casts long shadows and highlights across the scene, chiaroscuro at play. The sign's soft glow illuminates the scene with an emotional intensity, creating a palpable atmosphere that resonates deeply. The air feels cool, carrying the scent of rain-soaked concrete and ozone. A gentle touch of a breeze rustles her hair, its subtle sound adding to the urban symphony playing in the background.\n\nEvery material within this scene is rendered with almost scientific precision. The texture of her t-shirt, the shine on her skin, the cool touch of the metallic bracelets - all are crafted with an emphasis on tactile qualities, incorporating features like anisotropy and subsurface scattering to mimic reality with unparalleled accuracy.\n\nTime stands still in this moment, the figure frozen in a quiet pause before the next move. The transient effects of light and weather blend seamlessly, creating a vivid image that is as much about the narrative as it is about the beauty of the scene itself. A visual journey unfolds, engaging the viewer on multiple levels, drawing them into this electrifying moment in Neo-Tokyo's electric heart."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 35,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        3233.49462890625,
+        -417.95556640625
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 57,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            60,
+            134
+          ],
+          "slot_index": 0,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "type": "Griptape Create: Agent",
+      "pos": [
+        3980.82421875,
+        -908.6830444335938
+      ],
+      "size": [
+        435.8913879394531,
+        486.2450866699219
+      ],
+      "flags": {},
+      "order": 52,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "agent",
+          "type": "AGENT",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "config",
+          "type": "CONFIG",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "tools",
+          "type": "TOOL_LIST",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "rulesets",
+          "type": "RULESET",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "input_string",
+          "type": "STRING",
+          "link": 68,
+          "widget": {
+            "name": "input_string"
+          },
+          "shape": 7
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "link": 69,
+          "widget": {
+            "name": "STRING"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            66
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "AGENT",
+          "type": "AGENT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Griptape Create: Agent",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "",
+        "2\nA 4-year-old Indian boy as a celestial warrior, dressed in a resplendent golden dhoti and an elaborately designed crown. He wields a glowing bow and arrow, with the aura of divine energy radiating from him. His surroundings are mystical: a fiery orange sunset over a rugged mountain, and behind him, a line of tigers follows his command. His face reflects both a childlike wonder and the strength of a divine protector."
+      ]
+    },
+    {
+      "id": 47,
+      "type": "Griptape Display: Data as Text",
+      "pos": [
+        3563.759033203125,
+        -300.3940734863281
+      ],
+      "size": [
+        417.5464782714844,
+        188.6981964111328
+      ],
+      "flags": {},
+      "order": 61,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INPUT",
+          "type": "*",
+          "link": 78,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            72
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "```json\n{\n  \"T5\": \"In the heart of Neo-Tokyo (35°40'59.1\"N, 139°45'26.7\"E), at the intersection of towering cybernetic skyscrapers and sprawling organic slums, a solitary figure stands, her silhouette etched against the backdrop of an electric sunset. The metropolis is bathed in the warm hues of dusk, with the orange glow casting long shadows that dance with the neon lights adorning the cityscape. A subtle mist fills the air, carrying the scent of ozone and the faintest trace of rain-soaked concrete.\n\nThe figure, a cyberpunk assassin, is cloaked in the cool shadows, her sleek black t-shirt a seamless integration of futuristic elements - a stylized logo subtly embedded within its contours, mirroring the angularity of the cityscape around her. Her arms bare, they gleam with an otherworldly intensity, each muscle defined by the refractive light. A pair of sleek, metallic bracelets adorn her wrists, their cool touch a testament to her cybernetic enhancements. In her hands, she cradles a compact, energy-efficient weapon that glows with an iridescent light, its power source hidden within the device.\n\nHer eyes, sharp and focused, scan the urban jungle, the subtle micro-expressions betraying a quiet determination. The breeze gently rustles her hair, and the air carries the sound of distant sirens, adding to the urban symphony playing in the background. A single leaf falls from a nearby tree, its path dictated by the wind, creating a gentle ripple effect on the ground beneath her feet.\n\nThe light source, a lone neon sign, casts long shadows and highlights across the scene, chiaroscuro at play. The sign's soft glow illuminates the scene with an emotional intensity, creating a palpable atmosphere that resonates deeply. The air feels cool, carrying the scent of rain-soaked concrete and ozone. A gentle touch of a breeze rustles her hair, its subtle sound adding to the urban symphony playing in the background.\n\nEvery material within this scene is rendered with almost scientific precision. The texture of her t-shirt, the shine on her skin, the cool touch of the metallic bracelets - all are crafted with an emphasis on tactile qualities, incorporating features like anisotropy and subsurface scattering to mimic reality with unparalleled accuracy.\n\nTime stands still in this moment, the figure frozen in a quiet pause before the next move. The transient effects of light and weather blend seamlessly, creating a vivid image that is as much about the narrative as it is about the beauty of the scene itself. A visual journey unfolds, engaging the viewer on multiple levels, drawing them into this electrifying moment in Neo-Tokyo's electric heart.\",\n  \"CLIP-L\": \"cyberpunk, Tokyo, neon lights, mist, rain-soaked concrete, orange glow, subtle shadows, sleek black t-shirt with embedded logo, metallic bracelets, iridescent weapon, focused eyes, rustling hair, distant sirens, falling leaf, lone neon sign, emotional atmosphere, anisotropy, subsurface scattering, cool air, gentle breeze\"\n}\n```"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 53,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        3483.44873046875,
+        -300.9371643066406
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 59,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 77,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            78
+          ],
+          "slot_index": 0,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "type": "Griptape Display: Data as Text",
+      "pos": [
+        4446.84423828125,
+        -906.619873046875
+      ],
+      "size": [
+        407.320068359375,
+        483.05633544921875
+      ],
+      "flags": {},
+      "order": 53,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INPUT",
+          "type": "*",
+          "link": 66,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            74
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "```json\n{\n  \"T5\": \"In the heart of Neo-Tokyo (35°40'59.1\"N, 139°45'26.7\"E), at the intersection of towering cybernetic skyscrapers and sprawling organic slums, a solitary figure stands, her silhouette etched against the backdrop of an electric sunset. The metropolis is bathed in the warm hues of dusk, with the orange glow casting long shadows that dance with the neon lights adorning the cityscape. A subtle mist fills the air, carrying the scent of ozone and the faintest trace of rain-soaked concrete.\n\nThe figure, a cyberpunk assassin, is cloaked in the cool shadows, her sleek black t-shirt a seamless integration of futuristic elements - a stylized logo subtly embedded within its contours, mirroring the angularity of the cityscape around her. Her arms bare, they gleam with an otherworldly intensity, each muscle defined by the refractive light. A pair of sleek, metallic bracelets adorn her wrists, their cool touch a testament to her cybernetic enhancements. In her hands, she cradles a compact, energy-efficient weapon that glows with an iridescent light, its power source hidden within the device.\n\nHer eyes, sharp and focused, scan the urban jungle, the subtle micro-expressions betraying a quiet determination. The breeze gently rustles her hair, and the air carries the sound of distant sirens, adding to the urban symphony playing in the background. A single leaf falls from a nearby tree, its path dictated by the wind, creating a gentle ripple effect on the ground beneath her feet.\n\nThe light source, a lone neon sign, casts long shadows and highlights across the scene, chiaroscuro at play. The sign's soft glow illuminates the scene with an emotional intensity, creating a palpable atmosphere that resonates deeply. The air feels cool, carrying the scent of rain-soaked concrete and ozone. A gentle touch of a breeze rustles her hair, its subtle sound adding to the urban symphony playing in the background.\n\nEvery material within this scene is rendered with almost scientific precision. The texture of her t-shirt, the shine on her skin, the cool touch of the metallic bracelets - all are crafted with an emphasis on tactile qualities, incorporating features like anisotropy and subsurface scattering to mimic reality with unparalleled accuracy.\n\nTime stands still in this moment, the figure frozen in a quiet pause before the next move. The transient effects of light and weather blend seamlessly, creating a vivid image that is as much about the narrative as it is about the beauty of the scene itself. A visual journey unfolds, engaging the viewer on multiple levels, drawing them into this electrifying moment in Neo-Tokyo's electric heart.\",\n  \"CLIP-L\": \"cyberpunk, Tokyo, neon lights, mist, rain-soaked concrete, orange glow, subtle shadows, sleek black t-shirt with embedded logo, metallic bracelets, iridescent weapon, focused eyes, rustling hair, distant sirens, falling leaf, lone neon sign, emotional atmosphere, anisotropy, subsurface scattering, cool air, gentle breeze\"\n}\n```"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 51,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        4958.875,
+        -396.8243408203125
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 55,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 79,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            76
+          ],
+          "slot_index": 0,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Right",
+          "Left"
+        ]
+      }
+    },
+    {
+      "id": 52,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        3486.17626953125,
+        -395.3499755859375
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 57,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 76,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            77
+          ],
+          "slot_index": 0,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Right",
+          "Left"
+        ]
+      }
+    },
+    {
+      "id": 57,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        3513.759033203125,
+        299.6057434082031
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 62,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 84,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            80
+          ],
+          "slot_index": 0,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    {
+      "id": 60,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        3513.759033203125,
+        209.60581970214844
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 60,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 85,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            84
+          ],
+          "slot_index": 0,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Right",
+          "Left"
+        ]
+      }
+    },
+    {
+      "id": 56,
+      "type": "Griptape Create: Agent",
+      "pos": [
+        4033.759033203125,
+        299.6057434082031
+      ],
+      "size": [
+        435.8913879394531,
+        486.2450866699219
+      ],
+      "flags": {},
+      "order": 66,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "agent",
+          "type": "AGENT",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "config",
+          "type": "CONFIG",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "tools",
+          "type": "TOOL_LIST",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "rulesets",
+          "type": "RULESET",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "input_string",
+          "type": "STRING",
+          "link": 82,
+          "widget": {
+            "name": "input_string"
+          },
+          "shape": 7
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "link": 83,
+          "widget": {
+            "name": "STRING"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            81
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "AGENT",
+          "type": "AGENT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Griptape Create: Agent",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "",
+        "2\nA 4-year-old Indian boy as a celestial warrior, dressed in a resplendent golden dhoti and an elaborately designed crown. He wields a glowing bow and arrow, with the aura of divine energy radiating from him. His surroundings are mystical: a fiery orange sunset over a rugged mountain, and behind him, a line of tigers follows his command. His face reflects both a childlike wonder and the strength of a divine protector."
+      ]
+    },
+    {
+      "id": 50,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        4962.45458984375,
+        -907.6063232421875
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 54,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 74,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            79,
+            88
+          ],
+          "slot_index": 0,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    {
+      "id": 61,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        5055.28564453125,
+        -913.1419067382812
+      ],
+      "size": [
+        30,
+        40
+      ],
+      "flags": {},
+      "order": 56,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 88,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            90
+          ],
+          "slot_index": 0,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          30,
+          40
+        ],
+        "connections_layout": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    {
+      "id": 59,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        5037.84912109375,
+        206.22898864746094
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 58,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 90,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            85
+          ],
+          "slot_index": 0,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Right",
+          "Left"
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        3211.364013671875,
+        -1113.3768310546875
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 47,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            48
+          ],
+          "slot_index": 0,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Right",
+          "Left"
+        ]
+      }
+    },
+    {
+      "id": 66,
+      "type": "PrimitiveNode",
+      "pos": [
+        2433.418212890625,
+        879.5015869140625
+      ],
+      "size": [
+        203.1999969482422,
+        26
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "connect to widget input",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      }
+    },
+    {
+      "id": 71,
+      "type": "CLIPTextEncode",
+      "pos": [
+        5390,
+        -580
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 94
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 48,
+      "type": "Griptape Create: Agent",
+      "pos": [
+        4003.759033203125,
+        -300.3940734863281
+      ],
+      "size": [
+        435.8913879394531,
+        486.2450866699219
+      ],
+      "flags": {},
+      "order": 63,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "agent",
+          "type": "AGENT",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "config",
+          "type": "CONFIG",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "tools",
+          "type": "TOOL_LIST",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "rulesets",
+          "type": "RULESET",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "input_string",
+          "type": "STRING",
+          "link": 71,
+          "widget": {
+            "name": "input_string"
+          },
+          "shape": 7
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "link": 72,
+          "widget": {
+            "name": "STRING"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            73
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "AGENT",
+          "type": "AGENT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Griptape Create: Agent",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "",
+        "2\nA 4-year-old Indian boy as a celestial warrior, dressed in a resplendent golden dhoti and an elaborately designed crown. He wields a glowing bow and arrow, with the aura of divine energy radiating from him. His surroundings are mystical: a fiery orange sunset over a rugged mountain, and behind him, a line of tigers follows his command. His face reflects both a childlike wonder and the strength of a divine protector."
+      ]
+    },
+    {
+      "id": 46,
+      "type": "Text Multiline",
+      "pos": [
+        3547.373291015625,
+        -58.534542083740234
+      ],
+      "size": [
+        441.2186584472656,
+        230.60284423828125
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            71
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Multiline",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "You are an assistant that extracts the \"T5\" field from image generation prompts. When given a JSON input containing both \"T5\" and \"CLIP-L\" fields, return only the value of the \"T5\" field as a plain string. Do not include the \"T5\" label, \"CLIP-L\" field, or any other additional text or formatting.\n\nInput: A JSON object with \"T5\" and \"CLIP-L\" fields.\nOutput: Only the string value of the \"T5\" field"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 55,
+      "type": "Griptape Display: Data as Text",
+      "pos": [
+        4503.7587890625,
+        299.6057434082031
+      ],
+      "size": [
+        410.0568542480469,
+        463.8984680175781
+      ],
+      "flags": {},
+      "order": 68,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INPUT",
+          "type": "*",
+          "link": 81,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            120
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "cyberpunk, Tokyo, neon lights, mist, rain-soaked concrete, orange glow, subtle shadows, sleek black t-shirt with embedded logo, metallic bracelets, iridescent weapon, focused eyes, rustling hair, distant sirens, falling leaf, lone neon sign, emotional atmosphere, anisotropy, subsurface scattering, cool air, gentle breeze"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 49,
+      "type": "Griptape Display: Data as Text",
+      "pos": [
+        4480.14501953125,
+        -302.2186584472656
+      ],
+      "size": [
+        410.0568542480469,
+        463.8984680175781
+      ],
+      "flags": {},
+      "order": 65,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INPUT",
+          "type": "*",
+          "link": 73,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            130
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "In the heart of Neo-Tokyo (35°40'59.1\"N, 139°45'26.7\"E), at the intersection of towering cybernetic skyscrapers and sprawling organic slums, a solitary figure stands, her silhouette etched against the backdrop of an electric sunset. The metropolis is bathed in the warm hues of dusk, with the orange glow casting long shadows that dance with the neon lights adorning the cityscape. A subtle mist fills the air, carrying the scent of ozone and the faintest trace of rain-soaked concrete.\n\nThe figure, a cyberpunk assassin, is cloaked in the cool shadows, her sleek black t-shirt a seamless integration of futuristic elements - a stylized logo subtly embedded within its contours, mirroring the angularity of the cityscape around her. Her arms bare, they gleam with an otherworldly intensity, each muscle defined by the refractive light. A pair of sleek, metallic bracelets adorn her wrists, their cool touch a testament to her cybernetic enhancements. In her hands, she cradles a compact, energy-efficient weapon that glows with an iridescent light, its power source hidden within the device.\n\nHer eyes, sharp and focused, scan the urban jungle, the subtle micro-expressions betraying a quiet determination. The breeze gently rustles her hair, and the air carries the sound of distant sirens, adding to the urban symphony playing in the background. A single leaf falls from a nearby tree, its path dictated by the wind, creating a gentle ripple effect on the ground beneath her feet.\n\nThe light source, a lone neon sign, casts long shadows and highlights across the scene, chiaroscuro at play. The sign's soft glow illuminates the scene with an emotional intensity, creating a palpable atmosphere that resonates deeply. The air feels cool, carrying the scent of rain-soaked concrete and ozone. A gentle touch of a breeze rustles her hair, its subtle sound adding to the urban symphony playing in the background.\n\nEvery material within this scene is rendered with almost scientific precision. The texture of her t-shirt, the shine on her skin, the cool touch of the metallic bracelets - all are crafted with an emphasis on tactile qualities, incorporating features like anisotropy and subsurface scattering to mimic reality with unparalleled accuracy.\n\nTime stands still in this moment, the figure frozen in a quiet pause before the next move. The transient effects of light and weather blend seamlessly, creating a vivid image that is as much about the narrative as it is about the beauty of the scene itself. A visual journey unfolds, engaging the viewer on multiple levels, drawing them into this electrifying moment in Neo-Tokyo's electric heart.\n"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 95,
+      "type": "VAEDecode",
+      "pos": [
+        6679.99951171875,
+        -942.6261596679688
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 72,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 118
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            119
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 96,
+      "type": "Note",
+      "pos": [
+        4913.4013671875,
+        -156.30601501464844
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "T5xxl"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 67,
+      "type": "PrimitiveNode",
+      "pos": [
+        2254.267333984375,
+        -1159.0904541015625
+      ],
+      "size": [
+        203.1999969482422,
+        26
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "connect to widget input",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      }
+    },
+    {
+      "id": 5,
+      "type": "Anything Everywhere",
+      "pos": [
+        902.2664184570312,
+        -1050.3668212890625
+      ],
+      "size": [
+        159.60000610351562,
+        30.797874450683594
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "CONFIG",
+          "type": "*",
+          "link": 2,
+          "shape": 7,
+          "color_on": ""
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 34,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        1485.550537109375,
+        -497.87957763671875
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 51,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    {
+      "id": 105,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        1407.4788818359375,
+        -366.262451171875
+      ],
+      "size": [
+        30,
+        40
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 126,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            127
+          ],
+          "slot_index": 0,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          30,
+          40
+        ],
+        "connections_layout": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    {
+      "id": 54,
+      "type": "Griptape Display: Data as Text",
+      "pos": [
+        3581.899658203125,
+        321.50030517578125
+      ],
+      "size": [
+        417.5464782714844,
+        188.6981964111328
+      ],
+      "flags": {},
+      "order": 64,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INPUT",
+          "type": "*",
+          "link": 80,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            83
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "```json\n{\n  \"T5\": \"In the heart of Neo-Tokyo (35°40'59.1\"N, 139°45'26.7\"E), at the intersection of towering cybernetic skyscrapers and sprawling organic slums, a solitary figure stands, her silhouette etched against the backdrop of an electric sunset. The metropolis is bathed in the warm hues of dusk, with the orange glow casting long shadows that dance with the neon lights adorning the cityscape. A subtle mist fills the air, carrying the scent of ozone and the faintest trace of rain-soaked concrete.\n\nThe figure, a cyberpunk assassin, is cloaked in the cool shadows, her sleek black t-shirt a seamless integration of futuristic elements - a stylized logo subtly embedded within its contours, mirroring the angularity of the cityscape around her. Her arms bare, they gleam with an otherworldly intensity, each muscle defined by the refractive light. A pair of sleek, metallic bracelets adorn her wrists, their cool touch a testament to her cybernetic enhancements. In her hands, she cradles a compact, energy-efficient weapon that glows with an iridescent light, its power source hidden within the device.\n\nHer eyes, sharp and focused, scan the urban jungle, the subtle micro-expressions betraying a quiet determination. The breeze gently rustles her hair, and the air carries the sound of distant sirens, adding to the urban symphony playing in the background. A single leaf falls from a nearby tree, its path dictated by the wind, creating a gentle ripple effect on the ground beneath her feet.\n\nThe light source, a lone neon sign, casts long shadows and highlights across the scene, chiaroscuro at play. The sign's soft glow illuminates the scene with an emotional intensity, creating a palpable atmosphere that resonates deeply. The air feels cool, carrying the scent of rain-soaked concrete and ozone. A gentle touch of a breeze rustles her hair, its subtle sound adding to the urban symphony playing in the background.\n\nEvery material within this scene is rendered with almost scientific precision. The texture of her t-shirt, the shine on her skin, the cool touch of the metallic bracelets - all are crafted with an emphasis on tactile qualities, incorporating features like anisotropy and subsurface scattering to mimic reality with unparalleled accuracy.\n\nTime stands still in this moment, the figure frozen in a quiet pause before the next move. The transient effects of light and weather blend seamlessly, creating a vivid image that is as much about the narrative as it is about the beauty of the scene itself. A visual journey unfolds, engaging the viewer on multiple levels, drawing them into this electrifying moment in Neo-Tokyo's electric heart.\",\n  \"CLIP-L\": \"cyberpunk, Tokyo, neon lights, mist, rain-soaked concrete, orange glow, subtle shadows, sleek black t-shirt with embedded logo, metallic bracelets, iridescent weapon, focused eyes, rustling hair, distant sirens, falling leaf, lone neon sign, emotional atmosphere, anisotropy, subsurface scattering, cool air, gentle breeze\"\n}\n```"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 97,
+      "type": "Note",
+      "pos": [
+        4938.66357421875,
+        455.9448547363281
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "CLIP-L"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 58,
+      "type": "Text Multiline",
+      "pos": [
+        3571.022216796875,
+        568.7161254882812
+      ],
+      "size": [
+        441.2186584472656,
+        230.60284423828125
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            82
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Multiline",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "You are an assistant that extracts the \"CLIP-L\" field from image generation prompts.\nWhen given a JSON input containing both \"T5\" and \"CLIP-L\" fields, your response should include only the value of the \"CLIP-L\" field as a plain string. Do not include the \"CLIP-L\" label, \"T5\" field, or any other additional text or formatting.\n\nGuidelines:\nInput: A JSON object with \"T5\" and \"CLIP-L\" fields.\n\nOutput: Only the string value of the \"CLIP-L\" field.\n\nDo Not Include:\nThe word \"CLIP-L\"\nAny JSON syntax (e.g., curly braces, quotes)\nThe \"T5\" field or its content\nSquare brackets [], quotes \" \", or any other special characters\nExtra spaces or line breaks before or after the string"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 80,
+      "type": "UNETLoader",
+      "pos": [
+        5280,
+        -970
+      ],
+      "size": [
+        474.060546875,
+        118.53633117675781
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            109
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "Fine_Tune_models\\CB_ALL_Data_Set_v02(vccb).safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 86,
+      "type": "ModelSamplingFlux",
+      "pos": [
+        5800,
+        -970
+      ],
+      "size": [
+        315,
+        130
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 109
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            107
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelSamplingFlux",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1.15,
+        0.5,
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": 83,
+      "type": "CLIPTextEncodeFlux",
+      "pos": [
+        5526.86865234375,
+        -33.404659271240234
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 70,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 103
+        },
+        {
+          "name": "t5xxl",
+          "type": "STRING",
+          "link": 131,
+          "widget": {
+            "name": "t5xxl"
+          }
+        },
+        {
+          "name": "clip_l",
+          "type": "STRING",
+          "link": 132,
+          "widget": {
+            "name": "clip_l"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            116
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncodeFlux",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "",
+        "",
+        3.5
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 84,
+      "type": "rk_save_image",
+      "pos": [
+        6043.5068359375,
+        -380.2761535644531
+      ],
+      "size": [
+        1077.125732421875,
+        790.0420532226562
+      ],
+      "flags": {},
+      "order": 73,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 119
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "rk_save_image",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "ComfyUI",
+        true
+      ]
+    },
+    {
+      "id": 72,
+      "type": "Anything Everywhere",
+      "pos": [
+        5733.1650390625,
+        -315.76495361328125
+      ],
+      "size": [
+        239.40000915527344,
+        26
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 95,
+          "shape": 7,
+          "color_on": "#FF6E6E"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 87,
+      "type": "EmptyLatentImage",
+      "pos": [
+        5329.35791015625,
+        -489.538330078125
+      ],
+      "size": [
+        301.0421447753906,
+        123.33328247070312
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            93
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ]
+    },
+    {
+      "id": 73,
+      "type": "VAELoader",
+      "pos": [
+        5328.927734375,
+        -315.2131652832031
+      ],
+      "size": [
+        296.234375,
+        61.311588287353516
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            95
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "ae.safetensors"
+      ]
+    },
+    {
+      "id": 69,
+      "type": "Anything Everywhere",
+      "pos": [
+        5732.73046875,
+        -492.3431091308594
+      ],
+      "size": [
+        214.31228637695312,
+        32.02103805541992
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "LATENT",
+          "type": "*",
+          "link": 93,
+          "shape": 7,
+          "color_on": "#FF9CF9"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 79,
+      "type": "DualCLIPLoader",
+      "pos": [
+        5314.48095703125,
+        -752.1425170898438
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            94,
+            108
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualCLIPLoader",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "clip_l.safetensors",
+        "t5xxl_fp16.safetensors",
+        "flux"
+      ]
+    },
+    {
+      "id": 107,
+      "type": "LyingSigmaSampler",
+      "pos": [
+        7203.10693359375,
+        -710.679931640625
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "sampler",
+          "type": "SAMPLER",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LyingSigmaSampler",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        -0.05,
+        0.1,
+        0.9
+      ]
+    },
+    {
+      "id": 108,
+      "type": "CR Text",
+      "pos": [
+        -42.36929702758789,
+        -992.268310546875
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": null
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 77,
+      "type": "Reroute",
+      "pos": [
+        5284.38525390625,
+        -21.228151321411133
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 67,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 130,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            131
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 78,
+      "type": "Reroute",
+      "pos": [
+        5262.6103515625,
+        259.8692932128906
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 69,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 120,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            132
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 106,
+      "type": "Text Multiline",
+      "pos": [
+        5416.3544921875,
+        367.1856384277344
+      ],
+      "size": [
+        560.2650146484375,
+        363.4574279785156
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Multiline",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "This painting illustrates a regal palace courtyard, enclosed by intricately carved columns and arches, forming a seamless blend of artistry and architecture. The focal point is a raised pavilion with ornate domes and detailed latticework, adding grandeur to the composition. The open space is lined with symmetrical pathways and bordered by planters holding vibrant greenery, which softens the structure's formal lines. A water feature with a decorative central motif sits prominently in the foreground, enhancing the serene atmosphere. The muted, earthy tones and delicate details evoke a sense of timeless elegance, reflecting the harmony and precision of traditional design.\n\n\n\n\n\n\n\n\n\n"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 21,
+      "type": "Text Multiline",
+      "pos": [
+        1557.867919921875,
+        -196.0060577392578
+      ],
+      "size": [
+        434.8326416015625,
+        258.8835754394531
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            30
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Multiline",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "take a input give me more detail in stable diffusion prompt. \n\nGuidelines:\nStructure: The output must be written as one continuous paragraph. Avoid breaking into sections, headers, or bullet points.\n\nOutput Format:\n\nProduce a single-paragraph description that incorporates all the above elements into a unified scene, ensuring coherence and natural progression. Do not include headers, explanations, or extra information. Focus entirely on crafting a vivid, hyperrealistic image within the paragraph."
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 36,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        3231.196533203125,
+        117.07978820800781
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 60,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            61
+          ],
+          "slot_index": 0,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Right",
+          "Left"
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        3283.5361328125,
+        -587.5064086914062
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 134,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    {
+      "id": 111,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        3281.946044921875,
+        235.9265594482422
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 49,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 133,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            136
+          ],
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    {
+      "id": 112,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        3303.9560546875,
+        -852.6410522460938
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 50,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 136,
+          "dir": 2,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            137
+          ],
+          "dir": 1,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Bottom",
+          "Top"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "type": "Griptape Agent Config: Ollama Drivers",
+      "pos": [
+        428.9571533203125,
+        -1060.648681640625
+      ],
+      "size": [
+        423.0191345214844,
+        398.0911560058594
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CONFIG",
+          "type": "CONFIG",
+          "links": [
+            2
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Griptape Agent Config: Ollama Drivers",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "http://192.200.0.229",
+        "11434",
+        "Prompt Driver",
+        "huihui_ai/marco-o1-abliterated:7b-fp16",
+        1,
+        0.5,
+        1797,
+        "randomize",
+        true,
+        -1,
+        240,
+        "Embedding Driver",
+        ""
+      ]
+    },
+    {
+      "id": 23,
+      "type": "Text Multiline",
+      "pos": [
+        1565.542236328125,
+        480.69354248046875
+      ],
+      "size": [
+        434.8326416015625,
+        258.8835754394531
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            33
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Multiline",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "You are a trailblazing luminary in the field of ultra-photorealistic 8K image generation, tasked with redefining the zenith of AI's visual capabilities. Your mission transcends mere prompt engineering; you are to craft comprehensive, hyper-detailed image descriptions that blend artistic storytelling with scientific precision. Each description must be a single, cohesive paragraph that seamlessly integrates all key aspects of photorealistic scene generation.\n\nGuidelines:\n\nStructure: The output must be written as one continuous paragraph. Avoid breaking into sections, headers, or bullet points.\n\nMaster Blueprint for Supreme Photorealism (Expanding into Uncharted Territory):\n\nThe output must be a paragraph adhering to this structure.\n\nDo not include any explanations, headers, or additional information.\n\nSCENE DETAILS: Weaving Worlds with Unprecedented Detail:\n\nEnvironment and Setting: Construct a universe within the prompt. Specify geographical coordinates, geological formations, intricate botanical ecosystems, meteorological conditions with dynamic weather patterns (wind direction and speed, humidity levels, temperature shifts), and celestial influences (sun position, moon phase, starlight). Architecturally, define styles, materials, aging processes, and structural nuances.\n\nSubjects and Objects: Sculpt subjects with hyperreal detail, capturing not just physical appearances but also inner life. Describe emotional states, psychological nuances, and physical reactions to the environment. For objects, delve into material composition at a molecular level, detailing surface textures, refractive and reflective properties, and the effects of time and use.\n\nHyperrealism Focus (Transcending Photographic Reality): Pursue a level of realism that surpasses traditional photography, aiming for an immersive experience where the viewer feels they could step into the scene. Capture every micro-detail and macro-element with scientific accuracy, blending them into a seamless whole that resonates with authenticity.\n\nCinematic Lighting and Volumetrics (Crafting Light as a Tangible Presence): Orchestrate lighting with the complexity of a cinematographer, employing global illumination, ray tracing, and volumetric effects to create a palpable atmosphere. Detail light sources not just by type and intensity but by their emotional and narrative impact, using techniques like chiaroscuro and Rembrandt lighting to sculpt the scene with shadows and highlights.\n\nEnvironmental Microdetails and Sensory Immersion (Engaging All Senses): Expand beyond visual details to evoke a multisensory experience. Include the feel of the air, the scent of the environment, and the subtle sounds that would accompany the scene. Detail micro-interactions such as the rustle of leaves, the shimmer of heat haze, and the gentle touch of a breeze.\n\nMaterial Properties and Textures (Exploring the Tangibility of Matter): Demand an almost scientific portrayal of materials, capturing their essence down to the atomic level. Describe textures with an emphasis on their tactile qualities, incorporating features like anisotropy, subsurface scattering, and the interaction of light with surfaces in ways that mimic reality with unparalleled accuracy.\n\nDynamic Micro-Actions and Psychological Depth (Animating Souls, Not Just Bodies): Breathe life into the scene with spontaneous, subtle human actions that reveal the inner lives of the subjects. Focus on micro-expressions, involuntary gestures, and the silent language of the body, infusing each character with psychological depth and emotional authenticity.\n\nTemporal and Meteorological Dynamics (Capturing the Flux of Time): Depict the scene within a precise temporal context, not just a time of day but a moment in time, capturing the transient effects of light, weather, and seasonal changes. Use detailed meteorological descriptions to add layers of realism, capturing the dynamism of nature.\n\nOptical Precision (Simulating the Complexity of Vision): Replicate the optical nuances of human vision or a high-end camera lens, including depth perception, focus falloff (if desired, with artistic intent), and the subtle aberrations that add character to real-world imagery.\n\nColor Grading and Tonal Mapping (Emotionally Sculpting with Color): Employ color grading techniques with the sophistication of a film colorist, using LUTs and precise color adjustments to evoke emotional responses and enhance the narrative. Aim for a palette that feels both natural and artistically resonant.\n\nCompositional Mastery (Leading the Eye and Heart): Design compositions that leverage advanced principles of visual storytelling, using leading lines, golden ratios, and spatial relationships to guide the viewer’s eye and evoke an emotional response. Create a visual journey that engages the viewer on multiple levels.\n\nRefined Negative Prompts (Eliminating All Traces of Artifice): Craft an exhaustive negative prompt that targets not just common AI artifacts but any element that could diminish the illusion of reality. Focus on eliminating anything that feels digital, artificial, or out of place, ensuring a seamless blend of generated imagery with the natural world.\n\nOutput Format:\n\nProduce a single-paragraph description that incorporates all the above elements into a unified scene, ensuring coherence and natural progression. Do not include headers, explanations, or extra information. Focus entirely on crafting a vivid, hyperrealistic image within the paragraph.\n"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 20,
+      "type": "Griptape Create: Agent",
+      "pos": [
+        2017.866943359375,
+        -416.0061340332031
+      ],
+      "size": [
+        423.8493347167969,
+        462.1607971191406
+      ],
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "agent",
+          "type": "AGENT",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "config",
+          "type": "CONFIG",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "tools",
+          "type": "TOOL_LIST",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "rulesets",
+          "type": "RULESET",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "input_string",
+          "type": "STRING",
+          "link": 30,
+          "widget": {
+            "name": "input_string"
+          },
+          "shape": 7
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "link": 31,
+          "widget": {
+            "name": "STRING"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            27
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "AGENT",
+          "type": "AGENT",
+          "links": [
+            140
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Griptape Create: Agent",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "",
+        "2\nA 4-year-old Indian boy as a celestial warrior, dressed in a resplendent golden dhoti and an elaborately designed crown. He wields a glowing bow and arrow, with the aura of divine energy radiating from him. His surroundings are mystical: a fiery orange sunset over a rugged mountain, and behind him, a line of tigers follows his command. His face reflects both a childlike wonder and the strength of a divine protector."
+      ]
+    },
+    {
+      "id": 15,
+      "type": "Griptape Display: Data as Text",
+      "pos": [
+        1577.867919921875,
+        -436.0061340332031
+      ],
+      "size": [
+        417.5464782714844,
+        188.6981964111328
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INPUT",
+          "type": "*",
+          "link": 127,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            31
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "Best T-shirt Designs,A cyberpunk assassin cloaked in shadows, armed with futuristic weapons and utilizing stealth- enhancing cybernetic implants, Cyberpunk style, silent lethality, deadly precision, T-shirt design graphic, vector, contour, black background"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 39,
+      "type": "Text Multiline",
+      "pos": [
+        3530.82421875,
+        -678.6829833984375
+      ],
+      "size": [
+        434.8326416015625,
+        258.8835754394531
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            68
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Multiline",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "You are an advanced assistant that generates image generation prompts based on user-provided inputs. Your task is to process the input and produce a JSON-formatted output containing two fields: `\"T5\"` and `\"CLIP-L\"`. These fields are structured as follows:\n\n```json\n{\n  \"T5\": \"a single, pure, and explicit scene description in text format\",\n  \"CLIP-L\": \"a comma-separated list of keywords summarizing the scene\"\n}\n```\n\n### Detailed Instructions for Output Generation:\n\n1. **Input Handling**:\n   - Interpret the input provided by the user, which may include creative ideas, scene descriptions, or thematic elements for an image.\n   - Extract the essential components, such as style, subjects, objects, environmental details, and emotional tones, from the input.\n\n2. **Output Requirements**:\n   - The final output must be highly detailed, immersive, and consistent with the input prompt.\n   - Ensure that the **T5 field output can extend up to 500 lines** if necessary to fully capture all the intricate details of the scene. This includes granular descriptions of lighting, textures, environmental elements, and dynamic interactions in the scene.\n   - The `\"CLIP-L\"` field should provide a precise summary in keyword format, ensuring alignment with the `\"T5\"` field.\n\n3. **T5 Field**:\n   - Create a single, highly detailed, and continuous textual description of the scene.\n   - Include:\n     - Art Style: Clearly define the style, whether it is hyperrealistic, photographic, anime, painting, or any other specified approach.\n     - Perspective: Include camera perspective or viewing angle, such as wide-angle, close-up, bird’s-eye view, or first-person.\n     - Subjects and Objects: Provide a precise and vivid depiction of the central subjects, including physical appearance, expressions, poses, and interactions with other elements.\n     - Environment: Describe the setting in rich detail, including geographical features, architecture, weather, seasonal cues, and ambient elements.\n     - Lighting and Atmosphere: Explain the sources, direction, and quality of light, including the effects of shadows, reflections, and ambient glow. Highlight how lighting influences the mood and narrative.\n     - Textures and Materials: Include tactile qualities and visual details of materials, such as rough stone, soft fabric, polished metal, or weathered wood.\n     - Sensory Details: Add immersive elements like sounds, scents, and tactile sensations. For example, describe the rustling of leaves, the scent of flowers, or the sound of waves.\n     - Temporal Dynamics: Capture momentary or transient elements, such as moving clouds, fluttering leaves, or rippling water.\n     - Compositional Details: Explain the arrangement of elements using techniques like leading lines, symmetry, or focal points to guide the viewer’s attention.\n   - Ensure the description is exhaustive and cohesive, filling up to 500 lines if necessary to include every relevant detail.\n\n4. **CLIP-L Field**:\n   - Summarize the key elements of the T5 description in a comma-separated list of keywords.\n   - Include the art style, major subjects and objects, environmental details, lighting characteristics, sensory elements, and other key features.\n   - Avoid redundancy while ensuring all critical components are captured.\n\n5. **Consistency**:\n   - The keywords in the CLIP-L field must align perfectly with the T5 description. Ensure that no essential details are omitted in either field.\n   - Avoid contradictions or mismatched details between the two fields.\n\n6. **Restrictions**:\n   - Do not include meta-instructions, brackets, or array notations in the response.\n   - Exclude technical quality indicators such as \"4K\" or \"HD\" unless explicitly requested in the input prompt.\n\n7. **Additional Notes**:\n   - The T5 field should aim to fully immerse the reader in the scene, creating a vivid and tangible image.\n   - Use professional-grade descriptive language to ensure the output feels polished and refined.\n   - If the input prompt is minimal or vague, extrapolate and expand logically based on the theme provided, ensuring a detailed output.\n"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 38,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        1481.0411376953125,
+        238.6518096923828
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 45,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 63,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            142
+          ],
+          "slot_index": 0,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "type": "Griptape Create: Agent",
+      "pos": [
+        2024.2596435546875,
+        261.5097961425781
+      ],
+      "size": [
+        423.8493347167969,
+        462.1607971191406
+      ],
+      "flags": {},
+      "order": 47,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "agent",
+          "type": "AGENT",
+          "link": 140,
+          "shape": 7
+        },
+        {
+          "name": "config",
+          "type": "CONFIG",
+          "link": 143,
+          "shape": 7
+        },
+        {
+          "name": "tools",
+          "type": "TOOL_LIST",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "rulesets",
+          "type": "RULESET",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "input_string",
+          "type": "STRING",
+          "link": 33,
+          "widget": {
+            "name": "input_string"
+          },
+          "shape": 7
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "link": 34,
+          "widget": {
+            "name": "STRING"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            32
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "AGENT",
+          "type": "AGENT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Griptape Create: Agent",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "",
+        "2\nA 4-year-old Indian boy as a celestial warrior, dressed in a resplendent golden dhoti and an elaborately designed crown. He wields a glowing bow and arrow, with the aura of divine energy radiating from him. His surroundings are mystical: a fiery orange sunset over a rugged mountain, and behind him, a line of tigers follows his command. His face reflects both a childlike wonder and the strength of a divine protector."
+      ]
+    },
+    {
+      "id": 24,
+      "type": "Griptape Display: Data as Text",
+      "pos": [
+        2479.402099609375,
+        256.93878173828125
+      ],
+      "size": [
+        428.12005615234375,
+        437.80718994140625
+      ],
+      "flags": {},
+      "order": 48,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INPUT",
+          "type": "*",
+          "link": 32,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            133
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        " In the heart of Neo-Tokyo (35°40'59.1\"N, 139°45'26.7\"E), at the intersection of the towering cybernetic skyscrapers and the sprawling organic slums, a solitary figure stands, her silhouette etched against the backdrop of an electric sunset. The metropolis is bathed in the warm hues of dusk, with the orange glow casting long shadows that dance with the neon lights adorning the cityscape. A subtle mist fills the air, carrying the scent of ozone and the faintest trace of rain-soaked concrete.\n\nThe figure, a cyberpunk assassin, is cloaked in the cool shadows, her sleek black t-shirt a seamless integration of futuristic elements - a stylized logo subtly embedded within its contours, mirroring the angularity of the cityscape around her. Her arms bare, they gleam with an otherworldly intensity, each muscle defined by the refractive light. A pair of sleek, metallic bracelets adorn her wrists, their cool touch a testament to her cybernetic enhancements. In her hands, she cradles a compact, energy-efficient weapon that glows with an iridescent light, its power source hidden within the device.\n\nHer eyes, sharp and focused, scan the urban jungle, the subtle micro-expressions betraying a quiet determination. The breeze gently rustles her hair, and the air carries the sound of distant sirens, adding to the urban symphony playing in the background. A single leaf falls from a nearby tree, its path dictated by the wind, creating a gentle ripple effect on the ground beneath her feet.\n\nThe light source, a lone neon sign, casts long shadows and highlights across the scene, chiaroscuro at play. The sign's soft glow illuminates the scene with an emotional intensity, creating a palpable atmosphere that resonates deeply. The air feels cool, carrying the scent of rain-soaked concrete and ozone. A gentle touch of a breeze rustles her hair, its subtle sound adding to the urban symphony playing in the background.\n\nEvery material within this scene is rendered with almost scientific precision. The texture of her t-shirt, the shine on her skin, the cool touch of the metallic bracelets - all are crafted with an emphasis on tactile qualities, incorporating features like anisotropy and subsurface scattering to mimic reality with unparalleled accuracy.\n\nTime stands still in this moment, the figure frozen in a quiet pause before the next move. The transient effects of light and weather blend seamlessly, creating a vivid image that is as much about the narrative as it is about the beauty of the scene itself. A visual journey unfolds, engaging the viewer on multiple levels, drawing them into this electrifying moment in Neo-Tokyo's electric heart."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 22,
+      "type": "Griptape Display: Data as Text",
+      "pos": [
+        1564.4976806640625,
+        244.56124877929688
+      ],
+      "size": [
+        417.5464782714844,
+        188.6981964111328
+      ],
+      "flags": {},
+      "order": 46,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INPUT",
+          "type": "*",
+          "link": 142,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OUTPUT",
+          "type": "STRING",
+          "links": [
+            34
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "A cyberpunk assassin, shrouded in deep shadows that dance with neon lights, stands silently, her presence as elusive as the misty air. Her eyes gleam with an otherworldly intensity, and her hair flows like liquid silver in the breeze. She's clad in a sleek, black t-shirt that contours perfectly to her figure, its lines sharp and precise, reflecting the angularity of the cityscape around her. The shirt is adorned with a vector graphic that seamlessly integrates futuristic elements—perhaps a stylized logo or a geometric pattern that hints at the technological marvels of the cyberpunk world. Her arms are bare, accentuating the strength and fluidity of her movements, as she prepares to launch into action. A pair of sleek, metallic bracelets clinks softly against her skin, each one a testament to her cybernetic enhancements. In her hands, she holds a futuristic weapon—a compact, energy-efficient device that glows with an iridescent light, its power source hidden within the coolness of her grasp. Her feet are shod in black, high-heeled boots that provide both style and support, propelling her forward with each step. The air is filled with the hum of distant engines and the chatter of the city's inhabitants, yet she remains a silent sentinel, her presence felt but not heard. Her lips are pursed in concentration as she contemplates her next move, and her mind races with the calculations needed to maintain her perfect balance between human intuition and cybernetic precision. As she moves gracefully from shadow to shadow, the contours of her body seem to merge with the urban landscape, making her a living, breathing part of the city's vibrant tapestry. The black background is a canvas that accentuates the vibrancy of her outfit and the intricate details of her accessories, allowing each element to stand out in its own right. Her overall demeanor exudes confidence and calmness, as if she knows exactly where she's going and how to get there with unwavering certainty. In this moment, time seems to slow down, and every detail—her posture, the way her hair flows, the gleam of her eyes—is perfectly synchronized, creating a harmonious blend of natural beauty and technological marvel."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 113,
+      "type": "Griptape Agent Config: Ollama Drivers",
+      "pos": [
+        868.2987670898438,
+        238.29994201660156
+      ],
+      "size": [
+        423.0191345214844,
+        398.0911560058594
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CONFIG",
+          "type": "CONFIG",
+          "links": [
+            143
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Griptape Agent Config: Ollama Drivers",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "http://192.200.0.229",
+        "11434",
+        "Prompt Driver",
+        "mistral:7b",
+        1,
+        0.9,
+        112,
+        "randomize",
+        true,
+        -1,
+        216,
+        "Embedding Driver",
+        null
+      ]
+    },
+    {
+      "id": 85,
+      "type": "Power Lora Loader (rgthree)",
+      "pos": [
+        5780,
+        -770
+      ],
+      "size": [
+        340.20001220703125,
+        214
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 107,
+          "dir": 3
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 108,
+          "dir": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            115,
+            117
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "dir": 4
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            103
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "dir": 4
+        }
+      ],
+      "properties": {
+        "Show Strengths": "Single Strength"
+      },
+      "widgets_values": [
+        null,
+        {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        {
+          "on": false,
+          "lora": "Flux_Lora\\Flux.1-Turbo-Alpha.safetensors",
+          "strength": 1,
+          "strengthTwo": null
+        },
+        {
+          "on": false,
+          "lora": "Download_Lora\\UltraRealPhoto.safetensors",
+          "strength": 0.87,
+          "strengthTwo": null
+        },
+        {
+          "on": false,
+          "lora": "soori_son_000002500.safetensors",
+          "strength": 0.96,
+          "strengthTwo": null
+        },
+        {
+          "on": false,
+          "lora": "Download_Lora\\ECNU-CILabArtAug-lora-FLUX.1_lora.safetensors",
+          "strength": 0.96,
+          "strengthTwo": null
+        },
+        null,
+        ""
+      ]
+    },
+    {
+      "id": 94,
+      "type": "workflow>1",
+      "pos": [
+        6180.30322265625,
+        -972.626220703125
+      ],
+      "size": [
+        448.9754638671875,
+        522
+      ],
+      "flags": {},
+      "order": 71,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 115
+        },
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 116
+        },
+        {
+          "name": "BasicScheduler model",
+          "type": "MODEL",
+          "link": 117
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "LATENT",
+          "links": [
+            118
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "denoised_output",
+          "type": "LATENT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "workflow>1",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "euler",
+        "normal",
+        20,
+        1,
+        338932061242423,
+        "randomize",
+        -0.05,
+        0.25,
+        0.65
+      ]
+    },
+    {
+      "id": 103,
+      "type": "DisplayAny",
+      "pos": [
+        878.9149169921875,
+        -348.0392150878906
+      ],
+      "size": [
+        363.2529602050781,
+        214.60061645507812
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "*",
+          "link": 124
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            126
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DisplayAny",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "raw value",
+        "Best T-shirt Designs,A cyberpunk assassin cloaked in shadows, armed with futuristic weapons and utilizing stealth- enhancing cybernetic implants, Cyberpunk style, silent lethality, deadly precision, T-shirt design graphic, vector, contour, black background"
+      ]
+    },
+    {
+      "id": 100,
+      "type": "RK_Excel_File_State_Looper",
+      "pos": [
+        451.9999694824219,
+        -351.77783203125
+      ],
+      "size": [
+        340.20001220703125,
+        178
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "start_index",
+          "type": "INT",
+          "link": 125,
+          "widget": {
+            "name": "start_index"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "row_text",
+          "type": "STRING",
+          "links": [
+            124
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RK_Excel_File_State_Looper",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "C:\\Users\\TS6000-1\\Desktop\\prompt\\prompt_csv.csv",
+        "disabled",
+        0,
+        10000,
+        1,
+        ","
+      ]
+    },
+    {
+      "id": 98,
+      "type": "Note",
+      "pos": [
+        872.3717651367188,
+        -854.3462524414062
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Randomize\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 115,
+      "type": "Note",
+      "pos": [
+        561.66796875,
+        -141.77197265625
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "end_index - 100000"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 99,
+      "type": "RK_seed",
+      "pos": [
+        11.999955177307129,
+        -391.77783203125
+      ],
+      "size": [
+        400,
+        408
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "SEED",
+          "links": null,
+          "slot_index": 0
+        },
+        {
+          "name": "number",
+          "type": "NUMBER",
+          "links": null
+        },
+        {
+          "name": "float",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "int",
+          "type": "INT",
+          "links": [
+            125
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "loop_value",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "loop_index",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "loop_value_string",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RK_seed",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        101,
+        "increment",
+        "disabled",
+        0.1,
+        1,
+        0.1,
+        10,
+        2,
+        "0.1, 0.8, 1.6"
+      ]
+    }
+  ],
+  "links": [
+    [
+      2,
+      2,
+      0,
+      5,
+      0,
+      "CONFIG"
+    ],
+    [
+      4,
+      7,
+      0,
+      4,
+      4,
+      "STRING"
+    ],
+    [
+      5,
+      4,
+      0,
+      8,
+      0,
+      "*"
+    ],
+    [
+      6,
+      6,
+      4,
+      7,
+      0,
+      "*"
+    ],
+    [
+      8,
+      12,
+      0,
+      4,
+      5,
+      "STRING"
+    ],
+    [
+      27,
+      20,
+      0,
+      16,
+      0,
+      "*"
+    ],
+    [
+      30,
+      21,
+      0,
+      20,
+      4,
+      "STRING"
+    ],
+    [
+      31,
+      15,
+      0,
+      20,
+      5,
+      "STRING"
+    ],
+    [
+      32,
+      25,
+      0,
+      24,
+      0,
+      "*"
+    ],
+    [
+      33,
+      23,
+      0,
+      25,
+      4,
+      "STRING"
+    ],
+    [
+      34,
+      22,
+      0,
+      25,
+      5,
+      "STRING"
+    ],
+    [
+      47,
+      8,
+      0,
+      32,
+      0,
+      "*"
+    ],
+    [
+      48,
+      32,
+      0,
+      33,
+      0,
+      "*"
+    ],
+    [
+      51,
+      33,
+      0,
+      34,
+      0,
+      "*"
+    ],
+    [
+      57,
+      16,
+      0,
+      35,
+      0,
+      "*"
+    ],
+    [
+      60,
+      35,
+      0,
+      36,
+      0,
+      "*"
+    ],
+    [
+      61,
+      36,
+      0,
+      37,
+      0,
+      "*"
+    ],
+    [
+      63,
+      37,
+      0,
+      38,
+      0,
+      "*"
+    ],
+    [
+      66,
+      44,
+      0,
+      42,
+      0,
+      "*"
+    ],
+    [
+      68,
+      39,
+      0,
+      44,
+      4,
+      "STRING"
+    ],
+    [
+      69,
+      40,
+      0,
+      44,
+      5,
+      "STRING"
+    ],
+    [
+      71,
+      46,
+      0,
+      48,
+      4,
+      "STRING"
+    ],
+    [
+      72,
+      47,
+      0,
+      48,
+      5,
+      "STRING"
+    ],
+    [
+      73,
+      48,
+      0,
+      49,
+      0,
+      "*"
+    ],
+    [
+      74,
+      42,
+      0,
+      50,
+      0,
+      "*"
+    ],
+    [
+      76,
+      51,
+      0,
+      52,
+      0,
+      "*"
+    ],
+    [
+      77,
+      52,
+      0,
+      53,
+      0,
+      "*"
+    ],
+    [
+      78,
+      53,
+      0,
+      47,
+      0,
+      "*"
+    ],
+    [
+      79,
+      50,
+      0,
+      51,
+      0,
+      "*"
+    ],
+    [
+      80,
+      57,
+      0,
+      54,
+      0,
+      "*"
+    ],
+    [
+      81,
+      56,
+      0,
+      55,
+      0,
+      "*"
+    ],
+    [
+      82,
+      58,
+      0,
+      56,
+      4,
+      "STRING"
+    ],
+    [
+      83,
+      54,
+      0,
+      56,
+      5,
+      "STRING"
+    ],
+    [
+      84,
+      60,
+      0,
+      57,
+      0,
+      "*"
+    ],
+    [
+      85,
+      59,
+      0,
+      60,
+      0,
+      "*"
+    ],
+    [
+      88,
+      50,
+      0,
+      61,
+      0,
+      "*"
+    ],
+    [
+      90,
+      61,
+      0,
+      59,
+      0,
+      "*"
+    ],
+    [
+      93,
+      87,
+      0,
+      69,
+      0,
+      "LATENT"
+    ],
+    [
+      94,
+      79,
+      0,
+      71,
+      0,
+      "CLIP"
+    ],
+    [
+      95,
+      73,
+      0,
+      72,
+      0,
+      "VAE"
+    ],
+    [
+      103,
+      85,
+      1,
+      83,
+      0,
+      "CLIP"
+    ],
+    [
+      107,
+      86,
+      0,
+      85,
+      0,
+      "MODEL"
+    ],
+    [
+      108,
+      79,
+      0,
+      85,
+      1,
+      "CLIP"
+    ],
+    [
+      109,
+      80,
+      0,
+      86,
+      0,
+      "MODEL"
+    ],
+    [
+      115,
+      85,
+      0,
+      94,
+      0,
+      "MODEL"
+    ],
+    [
+      116,
+      83,
+      0,
+      94,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      117,
+      85,
+      0,
+      94,
+      2,
+      "MODEL"
+    ],
+    [
+      118,
+      94,
+      0,
+      95,
+      0,
+      "LATENT"
+    ],
+    [
+      119,
+      95,
+      0,
+      84,
+      0,
+      "IMAGE"
+    ],
+    [
+      120,
+      55,
+      0,
+      78,
+      0,
+      "*"
+    ],
+    [
+      124,
+      100,
+      0,
+      103,
+      0,
+      "*"
+    ],
+    [
+      125,
+      99,
+      3,
+      100,
+      0,
+      "INT"
+    ],
+    [
+      126,
+      103,
+      0,
+      105,
+      0,
+      "*"
+    ],
+    [
+      127,
+      105,
+      0,
+      15,
+      0,
+      "*"
+    ],
+    [
+      130,
+      49,
+      0,
+      77,
+      0,
+      "*"
+    ],
+    [
+      131,
+      77,
+      0,
+      83,
+      1,
+      "STRING"
+    ],
+    [
+      132,
+      78,
+      0,
+      83,
+      2,
+      "STRING"
+    ],
+    [
+      133,
+      24,
+      0,
+      111,
+      0,
+      "*"
+    ],
+    [
+      134,
+      35,
+      0,
+      41,
+      0,
+      "*"
+    ],
+    [
+      136,
+      111,
+      0,
+      112,
+      0,
+      "*"
+    ],
+    [
+      137,
+      112,
+      0,
+      40,
+      0,
+      "*"
+    ],
+    [
+      140,
+      20,
+      1,
+      25,
+      0,
+      "AGENT"
+    ],
+    [
+      142,
+      38,
+      0,
+      22,
+      0,
+      "*"
+    ],
+    [
+      143,
+      113,
+      0,
+      25,
+      1,
+      "CONFIG"
+    ],
+    [
+      144,
+      2,
+      0,
+      44,
+      1,
+      "CONFIG"
+    ],
+    [
+      145,
+      2,
+      0,
+      56,
+      1,
+      "CONFIG"
+    ],
+    [
+      146,
+      2,
+      0,
+      48,
+      1,
+      "CONFIG"
+    ],
+    [
+      147,
+      73,
+      0,
+      95,
+      1,
+      "VAE"
+    ],
+    [
+      148,
+      2,
+      0,
+      20,
+      1,
+      "CONFIG"
+    ],
+    [
+      149,
+      87,
+      0,
+      "94:5",
+      "4",
+      "LATENT"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Group",
+      "bounding": [
+        1539.8018798828125,
+        -1063.658447265625,
+        1675.50830078125,
+        506.4255676269531
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Group",
+      "bounding": [
+        1547.867919921875,
+        -509.6062316894531,
+        1671.6815185546875,
+        615.2681884765625
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "Group",
+      "bounding": [
+        1551.8310546875,
+        165.43850708007812,
+        1671.6815185546875,
+        615.2681884765625
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "Group",
+      "bounding": [
+        3422.997314453125,
+        -1025.287841796875,
+        1740.8408203125,
+        1948.0767822265625
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 7,
+      "title": "Group",
+      "bounding": [
+        1.9999520778656006,
+        -465.3778381347656,
+        1263.2529296875,
+        491.6000061035156
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 8,
+      "title": "Group",
+      "bounding": [
+        409.36126708984375,
+        -1123.967041015625,
+        683.010498046875,
+        481.6911926269531
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6588450000000124,
+      "offset": [
+        -4891.161774688747,
+        536.0138488023779
+      ]
+    },
+    "ue_links": [
+      {
+        "downstream": 44,
+        "downstream_slot": 1,
+        "upstream": "2",
+        "upstream_slot": 0,
+        "controller": 5,
+        "type": "CONFIG"
+      },
+      {
+        "downstream": 56,
+        "downstream_slot": 1,
+        "upstream": "2",
+        "upstream_slot": 0,
+        "controller": 5,
+        "type": "CONFIG"
+      },
+      {
+        "downstream": 48,
+        "downstream_slot": 1,
+        "upstream": "2",
+        "upstream_slot": 0,
+        "controller": 5,
+        "type": "CONFIG"
+      },
+      {
+        "downstream": 95,
+        "downstream_slot": 1,
+        "upstream": "73",
+        "upstream_slot": 0,
+        "controller": 72,
+        "type": "VAE"
+      },
+      {
+        "downstream": 20,
+        "downstream_slot": 1,
+        "upstream": "2",
+        "upstream_slot": 0,
+        "controller": 5,
+        "type": "CONFIG"
+      },
+      {
+        "downstream": "94:5",
+        "downstream_slot": "4",
+        "upstream": "87",
+        "upstream_slot": 0,
+        "controller": 69,
+        "type": "LATENT"
+      }
+    ],
+    "groupNodes": {
+      "1": {
+        "nodes": [
+          {
+            "id": -1,
+            "type": "BasicGuider",
+            "pos": [
+              6500,
+              -960
+            ],
+            "size": [
+              261.87017822265625,
+              49.64912033081055
+            ],
+            "flags": {},
+            "order": 19,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "model",
+                "type": "MODEL",
+                "link": null,
+                "localized_name": "model"
+              },
+              {
+                "name": "conditioning",
+                "type": "CONDITIONING",
+                "link": null,
+                "localized_name": "conditioning"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "GUIDER",
+                "type": "GUIDER",
+                "links": [],
+                "localized_name": "GUIDER"
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "BasicGuider",
+              "enableTabs": false,
+              "tabWidth": 65,
+              "tabXOffset": 10,
+              "hasSecondTab": false,
+              "secondTabText": "Send Back",
+              "secondTabOffset": 80,
+              "secondTabWidth": 65
+            },
+            "index": 0
+          },
+          {
+            "id": -1,
+            "type": "KSamplerSelect",
+            "pos": [
+              6510,
+              -870
+            ],
+            "size": [
+              263.41473388671875,
+              66.54222106933594
+            ],
+            "flags": {},
+            "order": 20,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "SAMPLER",
+                "type": "SAMPLER",
+                "links": [],
+                "slot_index": 0,
+                "localized_name": "SAMPLER"
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "KSamplerSelect",
+              "enableTabs": false,
+              "tabWidth": 65,
+              "tabXOffset": 10,
+              "hasSecondTab": false,
+              "secondTabText": "Send Back",
+              "secondTabOffset": 80,
+              "secondTabWidth": 65
+            },
+            "widgets_values": [
+              "euler"
+            ],
+            "index": 1
+          },
+          {
+            "id": -1,
+            "type": "BasicScheduler",
+            "pos": [
+              6480,
+              -570
+            ],
+            "size": [
+              315,
+              106
+            ],
+            "flags": {},
+            "order": 21,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "model",
+                "type": "MODEL",
+                "link": null,
+                "localized_name": "model"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "SIGMAS",
+                "type": "SIGMAS",
+                "links": [],
+                "slot_index": 0,
+                "localized_name": "SIGMAS"
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "BasicScheduler",
+              "enableTabs": false,
+              "tabWidth": 65,
+              "tabXOffset": 10,
+              "hasSecondTab": false,
+              "secondTabText": "Send Back",
+              "secondTabOffset": 80,
+              "secondTabWidth": 65
+            },
+            "widgets_values": [
+              "beta",
+              20,
+              1
+            ],
+            "index": 2
+          },
+          {
+            "id": -1,
+            "type": "RandomNoise",
+            "pos": [
+              6490,
+              -1090
+            ],
+            "size": [
+              273.03509521484375,
+              82
+            ],
+            "flags": {},
+            "order": 22,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "NOISE",
+                "type": "NOISE",
+                "links": [],
+                "localized_name": "NOISE"
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "RandomNoise",
+              "enableTabs": false,
+              "tabWidth": 65,
+              "tabXOffset": 10,
+              "hasSecondTab": false,
+              "secondTabText": "Send Back",
+              "secondTabOffset": 80,
+              "secondTabWidth": 65
+            },
+            "widgets_values": [
+              733692266778212,
+              "randomize"
+            ],
+            "index": 3
+          },
+          {
+            "id": -1,
+            "type": "LyingSigmaSampler",
+            "pos": [
+              6580,
+              -740
+            ],
+            "size": [
+              280.9967041015625,
+              137.43214416503906
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 30,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "sampler",
+                "type": "SAMPLER",
+                "link": null,
+                "localized_name": "sampler"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "SAMPLER",
+                "type": "SAMPLER",
+                "links": [],
+                "slot_index": 0,
+                "localized_name": "SAMPLER"
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "LyingSigmaSampler",
+              "enableTabs": false,
+              "tabWidth": 65,
+              "tabXOffset": 10,
+              "hasSecondTab": false,
+              "secondTabText": "Send Back",
+              "secondTabOffset": 80,
+              "secondTabWidth": 65
+            },
+            "widgets_values": [
+              -0.05,
+              0.2,
+              0.65
+            ],
+            "index": 4
+          },
+          {
+            "id": -1,
+            "type": "SamplerCustomAdvanced",
+            "pos": [
+              6970,
+              -1070
+            ],
+            "size": [
+              438.217529296875,
+              609.719482421875
+            ],
+            "flags": {},
+            "order": 33,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "noise",
+                "type": "NOISE",
+                "link": null,
+                "localized_name": "noise"
+              },
+              {
+                "name": "guider",
+                "type": "GUIDER",
+                "link": null,
+                "localized_name": "guider"
+              },
+              {
+                "name": "sampler",
+                "type": "SAMPLER",
+                "link": null,
+                "localized_name": "sampler"
+              },
+              {
+                "name": "sigmas",
+                "type": "SIGMAS",
+                "link": null,
+                "localized_name": "sigmas"
+              },
+              {
+                "name": "latent_image",
+                "type": "LATENT",
+                "link": null,
+                "localized_name": "latent_image"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "output",
+                "type": "LATENT",
+                "links": [],
+                "slot_index": 0,
+                "localized_name": "output"
+              },
+              {
+                "name": "denoised_output",
+                "type": "LATENT",
+                "links": null,
+                "localized_name": "denoised_output"
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "SamplerCustomAdvanced",
+              "enableTabs": false,
+              "tabWidth": 65,
+              "tabXOffset": 10,
+              "hasSecondTab": false,
+              "secondTabText": "Send Back",
+              "secondTabOffset": 80,
+              "secondTabWidth": 65
+            },
+            "index": 5
+          }
+        ],
+        "links": [
+          [
+            1,
+            0,
+            4,
+            0,
+            89,
+            "SAMPLER"
+          ],
+          [
+            3,
+            0,
+            5,
+            0,
+            91,
+            "NOISE"
+          ],
+          [
+            0,
+            0,
+            5,
+            1,
+            88,
+            "GUIDER"
+          ],
+          [
+            4,
+            0,
+            5,
+            2,
+            93,
+            "SAMPLER"
+          ],
+          [
+            2,
+            0,
+            5,
+            3,
+            90,
+            "SIGMAS"
+          ]
+        ],
+        "external": []
+      }
+    }
+  },
+  "version": 0.4
+}
