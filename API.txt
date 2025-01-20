@@ -1,6 +1,1 @@
-groq=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
-openai=YOUR_OPENAI_KEY
-google=AIzaSyCE9BOETfANVxAI4uyABdh1iGFHTL4pDg4
-deepseek=sk-6dc0bcabfd1e4ae59f10f51e4fba5a00
-together=788ffd265a2bd475c61fb301cd4af4d70c97212491b5bb61cff8731fd7e4e601
-ollama=http://localhost:11434
+1
